@@ -3,7 +3,11 @@
 This repository serves for introductory programming sessions at
 [University of Minho](https://www.uminho.pt/EN) for high school students.
 
+<<<<<<< HEAD
 All you need to get started is to use the [begin](https://github.com/cesium/fractal-tree/tree/begin/begin) folder.
+=======
+All you need to get started is to use the [begin](https://github.com/cesium/fractal-tree/tree/master/begin) folder.
+>>>>>>> master
 You may download it by clicking [here](https://goo.gl/hu1wJi). The goal is to
 get something like what's inside the [end](https://github.com/cesium/fractal-tree/tree/master/end) folder.
 
