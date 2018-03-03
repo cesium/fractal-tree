@@ -16,3 +16,8 @@ image below.
 [![coding-train-video](https://img.youtube.com/vi/0jjeOYMjmDU/0.jpg)](https://youtu.be/0jjeOYMjmDU)
 
 </div>
+
+## Contributing
+
+You may contribute to this repository by creating a folder with your github username inside the fancy folder.
+Just create your own fractal tree and make a pull request!
