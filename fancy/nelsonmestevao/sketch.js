@@ -1,59 +1,81 @@
 // Fractal Trees
 
-var angle;
-var slider;
+var brownR = 83;
+var brownG = 53;
+var brownB = 10;
+
+var greenR = 30;
+var greenG = 147; 
+var greenB = 45;
+
+var redR = 100;
+var redG = 3; 
+var redB = 0;
 
 function setup() {
-  createCanvas(1600, 900);
-  slider = createSlider(0, PI, PI/6, 0.01);
+  createCanvas(windowWidth, windowHeight);
+  randomSeed(42);
+  noLoop();
 }
 
 function draw() {
   background(240, 248, 255);
+  stroke(brownR, brownG, brownB);
+  strokeWeight(20);
 
-  angle = slider.value();
-  stroke(178, 34, 34);
-  strokeWeight(11);
   push();
-    translate(400, height);
-    branch(200,10, angle);
+    translate(width/4, height);
+    branch(width/10, 10, PI/6);
   pop();
 
-  angle = slider.value() - PI/15;
-  stroke(178, 34, 34);
-  strokeWeight(11);
   push();
-    translate(1200, height);
-    branch(200,10, angle);
+    translate(2*width/3, height);
+    branch(width/10, 10, PI/7);
   pop();
 }
 
 function branch(len,wei,ang) {
   line(0, 0, 0, -len);
   translate(0,-len);
+  stroke(brownR, brownG, brownB);
   strokeWeight(wei);
+
   if (len > 4) {
-    stroke(0, 191, 255);
+
     push();
       rotate(ang);
-      branch(len * 0.7, wei * 0.7, ang * .9);
+      branch(len * 0.7, wei * 0.7, ang);
     pop();
 
-    stroke(95, 158, 160);
     push();
-      rotate(-2*ang);
-      branch(len * 0.7, wei * 0.7, ang * 1.2);
-    pop();
-
-    stroke(100, 200, 100);
-    push();
-      rotate(2*ang);
-      branch(len * 0.3, wei * 0.7, ang * 1.1);
+      rotate(-ang-PI/12);
+      branch(len * 0.7, wei * 0.7, ang);
     pop();
 
     push();
       rotate(-ang);
-      branch(len * 0.3, wei * 0.7, ang * 1.15);
+      branch(len * 0.3, wei * 0.7, ang);
     pop();
+
+    push();
+      rotate(ang+PI/9);
+      branch(len * 0.3, wei * 0.7, ang);
+    pop();
+
+  } else {
+
+    x = random(0,1);
+
+    if (x > 0.85) { 
+      fill(greenR, greenG, greenB);
+      noStroke();
+      ellipse(0, 0, 14, 6);
+
+    } else if (x < 0.01) {
+      fill(redR, redG, redB);
+      noStroke();
+
+      ellipse(16,16,16,16);
+    }
   }
 }
