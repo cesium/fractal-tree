@@ -2,7 +2,7 @@ baseURL = "https://cesium.github.io/fractal-tree"
 title = "Fractal Tree • CeSIUM"
 
 # Directories
-publishDir = "/public"
+publishDir = "public"
 
 # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
 pygmentsCodefences = true

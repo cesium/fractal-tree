@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Utilities on Fractal Tree • CeSIUM</title>
+    <link>https://cesium.github.io/fractal-tree/docs/utilities/</link>
+    <description>Recent content in Utilities on Fractal Tree • CeSIUM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://cesium.github.io/fractal-tree/docs/utilities/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Borders &amp; Shadows</title>
+      <link>https://cesium.github.io/fractal-tree/docs/utilities/borders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/utilities/borders/</guid>
+      <description>Borders Default Border Border-2 Border-3  Border-4 Border-5 Border-6  Code: &amp;lt;div class=&amp;#34;row flex-spaces&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-primary&amp;#34;&amp;gt;Default Border&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-2 border-primary&amp;#34;&amp;gt;Border-2&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-3 border-primary&amp;#34;&amp;gt;Border-3&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;row flex-spaces&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-4 border-primary&amp;#34;&amp;gt;Border-4&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-5 border-primary&amp;#34;&amp;gt;Border-5&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-6 border-primary&amp;#34;&amp;gt;Border-6&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Border Colors Border primary Border secondary Border success Border warning Border danger Border white  Code: &amp;lt;div class=&amp;#34;row child-borders&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-primary&amp;#34;&amp;gt;Border primary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-secondary&amp;#34;&amp;gt;Border secondary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-success&amp;#34;&amp;gt;Border success&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-warning&amp;#34;&amp;gt;Border warning&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-danger&amp;#34;&amp;gt;Border danger&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border background-primary border-white&amp;#34;&amp;gt;Border white&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;row child-borders&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-primary&amp;#34;&amp;gt;Border primary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-secondary&amp;#34;&amp;gt;Border secondary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-success&amp;#34;&amp;gt;Border success&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-warning&amp;#34;&amp;gt;Border warning&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-danger&amp;#34;&amp;gt;Border danger&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border background-primary border-white&amp;#34;&amp;gt;Border white&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Child Borders Use this if you want all children to have a border.</description>
+    </item>
+    
+    <item>
+      <title>Colors</title>
+      <link>https://cesium.github.io/fractal-tree/docs/utilities/colors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/utilities/colors/</guid>
+      <description> Text Text primary
+Text secondary
+Text success
+Text warning
+Text danger
+Text muted
+Code: &amp;lt;p class=&amp;#34;text-primary&amp;#34;&amp;gt;Text primary&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;text-secondary&amp;#34;&amp;gt;Text secondary&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;text-success&amp;#34;&amp;gt;Text success&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;text-warning&amp;#34;&amp;gt;Text warning&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;text-danger&amp;#34;&amp;gt;Text danger&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;text-muted&amp;#34;&amp;gt;Text muted&amp;lt;/p&amp;gt;  Backgrounds Background primary Background secondary Background success Background warning Background danger  Code: &amp;lt;div class=&amp;#34;row flex-center&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col background-primary&amp;#34;&amp;gt;Background primary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col background-secondary&amp;#34;&amp;gt;Background secondary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col background-success&amp;#34;&amp;gt;Background success&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col background-warning&amp;#34;&amp;gt;Background warning&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col background-danger&amp;#34;&amp;gt;Background danger&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Spacing</title>
+      <link>https://cesium.github.io/fractal-tree/docs/utilities/spacing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/utilities/spacing/</guid>
+      <description> Margin Margin Margin-large Margin-top-small  Code: &amp;lt;div class=&amp;#34;row flex-spaces child-borders&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col margin&amp;#34;&amp;gt;Margin&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col margin-large&amp;#34;&amp;gt;Margin-large&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col margin-top-small&amp;#34;&amp;gt;Margin-top-small&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Padding Padding-small Padding-none Padding-left-large  Code: &amp;lt;div class=&amp;#34;row flex-spaces child-borders&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col padding-small&amp;#34;&amp;gt;Padding-small&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col padding-none&amp;#34;&amp;gt;Padding-none&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col padding-left-large&amp;#34;&amp;gt;Padding-left-large&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;</description>
+    </item>
+    
+  </channel>
+</rss>
