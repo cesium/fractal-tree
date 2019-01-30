@@ -5,7 +5,7 @@ let slider;
 
 function setup() {
   createCanvas(800, 800);
-  slider = createSlider(0, PI, PI/4, 0.01);
+  slider = createSlider(20, 90, 45, 1);
 }
 
 function draw() {
