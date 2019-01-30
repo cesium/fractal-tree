@@ -1,7 +1,7 @@
 // Fractal Trees
 
-var angle;
-var slider;
+let angle;
+let slider;
 
 function setup() {
   createCanvas(800, 800);
