@@ -8,6 +8,12 @@ weight: -270
 
 This projects has the goal of making a factral tree. From the get go lets explain whats a fractal, well a fractal is a infinite repeation of a certain patern in this particular case our patern is the "Y" this may not seem clear now but it will soon don't worry. Now that you know what a fractral is a fractal tree is simply a fractal that makes a tree as its final form. Okay after this basic explanation lets get it started!
 
+![](finalTree.png)
+
+
+
+in the end of this tutorial you will obtain the power to make one of these incredible don't you think?
+
 ### Setup
 
 #### Web Browser
@@ -37,6 +43,20 @@ And a milion of others have fun searching for them...
 
 For this Project you will need some acquired knowladge since this tutorial is amazing the knowladge will be given for free
 
+Note:
+To define/use fuctions you need to call them, thats pretty simple here is a small example
+
+```javascript
+
+function whatever() {
+
+}
+
+```
+
+obviously this function does nothing because has nothing inside so lets learn what to put insane to create the factral tree
+
+
 #### CreateCanvas
 
 Just like in a painting you need some sort of place to be your canvas like the name sugests, insane right? So what do you do to use this funcion basicly do createCanvas next to it in paranteses put first the heigth followed by the weigth obviously with a comma in the middle, finally you have your canvas so lets begin to create art (yeah programing is art).
@@ -48,9 +68,12 @@ Example:
 
 ```javascript
 
-createCanvas(200,200);
+function canvas() {
+    createCanvas(200,200);
+}
 
 ```
+
 in this example the canvas has a (200,200) dimension
 
 #### Background
@@ -61,9 +84,12 @@ Example:
 
 ```javascript
 
-background(0);
+function color() {
+    background(0);
+}
 
 ```
+
 The background is now Black yeah
 
 #### Line
@@ -77,7 +103,9 @@ Example:
 
 ```javascript
 
-line(0,0,10,10);
+function draw() {
+    line(0,0,10,10);
+}
 
 ```
 
@@ -91,8 +119,9 @@ Example:
 
 ```javascript
 
-translate(10,10);
-
+function translation() {
+    translate(10,10);
+}
 ```
 
 Origin of the axis is now (10,10)
@@ -105,8 +134,306 @@ Example:
 
 ```javascript
 
-rotate(pi/4);
+function rotation() {
+    rotate(PI/4);
+}
 
 ```
 
 the axis is rotated now 45 degrees
+
+After this brief knowladge lets finally start coding!
+
+## Start
+
+Since starting line must be somewhere this time is with createCanvas and background (explained before) thats given out even before you even think about it
+
+```javascript
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(220);
+}
+
+```
+
+The "Base" is now ready to improvement so the first step to make the tree happen is to draw its trunk, well to do it lets use line but where should you do it ? since canvas size is a 400x400 lets do it in the bottom middle of canvas that is 200x200 with 100 length and to make it simpler to understand lets make another function with it and call it branch later will be usefull so just make it now
+
+Note:
+by creating a new function you must call it on the "main" one, in this case is "draw" so to call "branch" just go to "draw" and do "branch();"
+
+```javascript
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(220);
+    stroke(255);
+    branch();
+}
+
+function branch() {
+    line(200, 400, 200, 300);
+}
+
+```
+don't give too much importance to stroke is simply the color desired for the line in this case white
+
+if everything is done correctly it should look like this 
+
+![](trunk.png)
+
+the trunk is now established next step is to draw branches to do so using a variable is optimal, since lots of branches will be needed and to make the tree do it recursively is the way to go so how do you do it? first and foremost to define a variable you do it inside the paranteses of the funcion you want that variable to be into in this case its branch, lets name it len since it will define the length of branches lets try then to write the same code but now with the variable len
+
+```javascript
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(220);
+    stroke(255);
+    branch(100);
+}
+
+function branch(len) {
+    line(200, 400, 200, 400 - len);
+}
+
+```
+
+Note:
+when calling branch, 100 is the value of len
+
+using variables is now on skill list but drawing lines from a specific point in this case from (200, 400) to (200, 300) its a pain since the goal is to draw a tree recursively so a simple way to do it is simply starting to draw from the axis origin and then define a patern so what should you use to do so ? the anwser here is translate defining axis origin the middle bottom then starting to make the tree grow from there but by doing this you also need to chance line because its no more a specific point but the axis origin much easier right?
+
+```javascript
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(220);
+    stroke(255);
+    translate(200, 400);
+    branch(100);
+}
+
+function branch(len) {
+    line(0, 0, 0, -len);
+}
+
+```
+
+Note:
+remenber that axis is inverted so len must be negative thats why its -len
+
+## Development
+
+trunk is fixed and strong to grow big so lets do it, lets draw branches to the tree but going straight ahead its not very treeable, lets go sideways then seems good to do so you need to change the angle you will draw onto, rotate is the way to go but just for testing mesuares lets only go to the right now that rotate is used there only one thing left before draw the branch what is ? correct moving the axis origin to the trunk's top by using translate again, now all conditions are met lets draw branches
+
+```javascript
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(220);
+    stroke(255);
+    translate(200, 400);
+    branch(100);
+}
+
+function branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
+    rotate(PI/4);
+    line(0, 0, 0, -len);
+}
+
+```
+
+![](branch.png)
+
+your tree now has a new branch yeah but if you really wanna make a real tree branches as you go up on it will grow smaller so how do you make it possible ? simple see how you did line again well that basicly doing branch function so insted of doing line just call branch with a smaller value or by other means multiply the initial given number by another smaller than 1 lets use 0.7 here
+
+```javascript
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(220);
+    stroke(255);
+    translate(200, 400);
+    branch(100);
+}
+
+function branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
+    rotate(PI/4);
+    branch(len * 0.7);
+}
+
+```
+surprise it exploded or by other means this happened
+
+![](crash.png)
+
+well its no surprise there's no limitation/condition to make it stop then it created an infinte loop and eventually went boom,so lets make a stop point so eventually it stops and don't explodes anymore, in order for it to happen use if paranteses and inside the condition you want for branch to stop here lets use len > 4 implement the if condition before with branch inside and it will stop when len is minus or equal to 4 in this case, so lets try it
+
+```javascript
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(220);
+    stroke(255);
+    translate(200, 400);
+    branch(100);
+}
+
+function branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
+    rotate(PI/4);
+    if (len > 4) {
+        branch(len * 0.7)
+    }
+}
+
+```
+![](tail.png)
+
+see it didn't go boom anymore but if you want to adjust the angle without changing it every single time,first lets make the angle a variable so its easier to adjust for so making a slider is the way to go, how do you make a slider you ask use createSlider after in paranteses obviously (take into account that createslider needs four arguments), firsly in the first two aguments you put the slider range here it will be from 0 to 180 (from this point onwards lets stop using radiants and start to use degrees, for it use angleMode(DEGREES), it sets the angle to degrees, if you have difficulties doing so click [here](https://en.wikipedia.org/wiki/Radian)), then on the third argument put the starting point here its 45 and finally how much you want to move by changing the slider 1 seems okay here, so lets implement this to the code
+
+```javascript
+
+let angle;
+let slider;
+
+function setup() {
+    createCanvas(400, 400);
+	  angleMode(DEGREES);
+	  slider = createSlider(0, 180, 45, 1);
+}
+
+function draw() {
+    background(220);
+	angle = slider.value();
+    stroke(255);
+    translate(200, 400);
+    branch(100);
+}
+
+function branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
+    rotate(angle);
+	if (len > 4) {
+      branch(len * 0.7);
+}
+	
+}
+
+```
+
+in case you are wondering "angle = slider.value();" is simply saying the slider created is apllied to the angle range also let is used to define the variable name insted of creating a function easier and most important less work
+
+rightside is now done so to do left side is simply rotating to the opposite side by doing -angle and calling branch again everything on the if condition made before
+
+```javascript
+
+let angle;
+let slider;
+
+function setup() {
+    createCanvas(400, 400);
+	  angleMode(DEGREES);
+	  slider = createSlider(0, 180, 45, 1);
+}
+
+function draw() {
+    background(220);
+	angle = slider.value();
+    stroke(255);
+    translate(200, 400);
+    branch(100);
+}
+
+function branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
+    
+	if (len > 4) {
+      rotate(angle);
+      branch(len*0.7);
+      rotate(-angle);
+      branch(len * 0.7
+
+}
+	
+}
+
+```
+![](reverse.png)
+
+plot twist it doesn't work
+
+## Conclusion
+
+why it seemed so right? well remenber translate it is his fault since you always changed the "starting" point to the top of the branch it doesn't come back to make it to the left side insted goes always right and makes the patern only there making, a funny but not intended result.To solve this problem is quiet easy use push and pop, push saves the intial position that you were before applying the if condition then you do branch like usually and when the if condition makes you stop you pop, it means you go back to the state saved in push, up to this point you have only done the right side of the tree now for the left side just push and pop again but this time to the negative angle and magic will happen
+
+```javascript
+
+let angle;
+let slider;
+
+function setup() {
+    createCanvas(400, 400);
+	  angleMode(DEGREES);
+	  slider = createSlider(0, 180, 45, 1);
+}
+
+function draw() {
+    background(220);
+	angle = slider.value();
+    stroke(255);
+    translate(200, 400);
+    branch(100);
+}
+
+function branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
+	if (len > 4) {
+    push();
+      rotate(angle);
+      branch(len*0.7);
+    pop();
+    push();
+      rotate(-angle);
+      branch(len * 0.7
+    pop();
+
+}
+	
+}
+
+```
+
+![](finalTree.png)
+
+your hardwork payed off the tree is finally done this is a basic one now that you have this basic knowladge how to make a fractral tree try to improve it making a chirstmas tree or give your imagination/creativity wings and fly create your own and unique tree now that you are up to the chalange go and fly
