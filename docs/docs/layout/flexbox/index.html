@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='The less formal CSS framework.'>
+<meta name='author' content='Rhyneav and PaperCSS contributors.'>
+
+
+<link rel="shortcut icon" type="image/x-icon" href="http://cesium.di.uminho.pt/assets/favicon-6a8bf11b293ceb49ab590fde8189584cbbd43ba2bbd0b3c446a6c331e1edbdf2.ico"/>
+
+
+<meta name="twitter:description" content="The less formal CSS framework">
+<meta name="twitter:title" content="PaperCSS">
+
+
+<meta property="og:url" content="https://www.getpapercss.com/">
+<meta property="og:title" content="PaperCSS">
+<meta property="og:description" content="The less formal CSS framework">
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <title>Flexbox | Fractal Tree • CeSIUM</title>
+  <link rel='canonical' href='https://cesium.github.io/fractal-tree/docs/layout/flexbox/'>
+
+  
+<link rel='stylesheet' href='assets/paper.min.css'>
+<link rel='stylesheet' href='assets/demo.css'>
+</head>
+
+
+
+
+<body>
+  <div id='top' class='row site'>
+    <div class='sm-12 md-8 col'>
+        <div class='paper'>
+          <div class='demo-title'>
+            <div class='row flex-center'>
+              <div class='text-center'>
+                <h1>Fractal Tree • CeSIUM</h1>
+                <h3>Introductory programming sessions @ University of Minho</h3>
+              </div>
+            </div>
+
+            <div class="row flex-center child-borders">
+  <a class='paper-btn margin' href='/fractal-tree/'>Fractal Tree</a>
+  <a class='paper-btn margin' href='/fractal-tree/docs/'>Documentation</a>
+  <a class='paper-btn margin' href='/fractal-tree/about/'>About Us</a>
+  
+  <a href="https://github.com/rhyneav/papercss" target="_blank" class="paper-btn margin">Github</a>
+</div>
+
+          </div>
+          <div class="to-top">
+            <a href="#top" class="paper-btn margin">^</a>
+          </div>
+
+
+<div class='section'>
+  <h2>Flexbox</h2>
+  
+
+<h3 id="flexgrid">Flexgrid</h3>
+
+<p>The flexgrid is a grid system that supports up to 12 columns per row. Because it
+uses flexbox (rather than just %widths), we also get the benefit of the fun
+parts of flexbox like alignment in more complex ways than normal.</p>
+
+<div class="demo">
+  <div class="row">
+    <div class="col-4 col">col-4 col</div>
+    <div class="col-4 col">col-4 col</div>
+    <div class="col-4 col">col-4 col</div>
+  </div>
+  <div class="row">
+    <div class="col-3 col">col-3 col</div>
+    <div class="col-9 col">col-9 col</div>
+  </div>
+  <div class="row">
+    <div class="sm-6 md-8 lg-10 col">sm-6 md-8 lg-10 col</div>
+    <div class="sm-6 md-4 lg-2 col">sm-6 md-4 lg-2 col</div>
+  </div>
+  <div class="row">
+    <div class="sm-5 col">sm-5 col</div>
+    <div class="col-fill col">col-fill col</div>
+    <div class="col-fill col">col-fill col</div>
+  </div>
+  <div class="row">
+    <div class="sm-4 col">Aligned</div>
+    <div class="sm-4 col">Left (default)</div>
+  </div>
+  <div class="row flex-right">
+    <div class="sm-4 col">Aligned</div>
+    <div class="sm-4 col">Right (flex-right)</div>
+  </div>
+  <div class="row flex-center">
+    <div class="sm-4 col">Aligned</div>
+    <div class="sm-4 col">Center (flex-center)</div>
+  </div>
+  <div class="row flex-edges">
+    <div class="sm-4 col">Aligned</div>
+    <div class="sm-4 col">to edges (flex-edges)</div>
+  </div>
+  <div class="row flex-spaces">
+    <div class="sm-4 col">Aligned</div>
+    <div class="sm-4 col">to be evenly spaced (flex-spaces)</div>
+  </div>
+  <div class="row flex-top">
+    <div class="sm-4 col">Aligned top</div>
+    <div class="sm-4 col">Aligned top</div>
+    <div class="sm-4 col">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+    </div>
+  </div>
+  <div class="row flex-middle">
+    <div class="sm-4 col">Aligned middle</div>
+    <div class="sm-4 col">Aligned middle</div>
+    <div class="sm-4 col">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+    </div>
+  </div>
+  <div class="row flex-bottom">
+    <div class="sm-4 col">Aligned bottom</div>
+    <div class="sm-4 col">Aligned bottom</div>
+    <div class="sm-4 col">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+    </div>
+  </div>
+  <div class="row">
+    <div class="sm-3 col align-bottom">Align bottom</div>
+    <div class="sm-3 col align-middle">Align middle</div>
+    <div class="sm-3 col align-top">Align top</div>
+    <div class="sm-3 col">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+    </div>
+  </div>
+</div>
+
+<h4 id="code">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;col-4 col&#34;</span>&gt;col-4 col&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;col-4 col&#34;</span>&gt;col-4 col&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;col-4 col&#34;</span>&gt;col-4 col&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;col-3 col&#34;</span>&gt;col-3 col&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;col-9 col&#34;</span>&gt;col-9 col&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-6 md-8 lg-10 col&#34;</span>&gt;sm-6 md-8 lg-10 col&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-6 md-4 lg-2 col&#34;</span>&gt;sm-6 md-4 lg-2 col&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-5 col&#34;</span>&gt;sm-5 col&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;col-fill col&#34;</span>&gt;col-fill col&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;col-fill col&#34;</span>&gt;col-fill col&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-4 col&#34;</span>&gt;Aligned&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-4 col&#34;</span>&gt;Left (default)&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-right&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-4 col&#34;</span>&gt;Aligned&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-4 col&#34;</span>&gt;Right (flex-right)&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-center&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-4 col&#34;</span>&gt;Aligned&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-4 col&#34;</span>&gt;Center (flex-center)&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-edges&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-4 col&#34;</span>&gt;Aligned&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-4 col&#34;</span>&gt;to edges (flex-edges)&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-spaces&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-4 col&#34;</span>&gt;Aligned&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-4 col&#34;</span>&gt;to be evenly spaced (flex-spaces)&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-top&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-6 col&#34;</span>&gt;Aligned top&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-6 col&#34;</span>&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-middle&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-6 col&#34;</span>&gt;Aligned middle&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-6 col&#34;</span>&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-bottom&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-6 col&#34;</span>&gt;Aligned bottom&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-6 col&#34;</span>&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col align-bottom&#34;</span>&gt;Align bottom&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col align-middle&#34;</span>&gt;Align middle&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col align-top&#34;</span>&gt;Align top&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col&#34;</span>&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+</div>
+
+        </div>
+    </div>
+    <div class='sm-12 md-4 col sidebar'>
+    
+    <div class='paper'>
+      <h3 class='sidebar-title' style='text-align:center'>
+        <a href='/docs'>Documentation</a>
+      </h3>
+      <div class='row'>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-components' type='radio' name='collapsible'>
+          <label for="collapsible-components">Components</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/alerts/'>Alerts</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/articles/'>Articles</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/badges/'>Badges</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/buttons/'>Buttons</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/cards/'>Cards</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/collapsible/'>Collapsibles</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/forms/'>Forms</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/modals/'>Modals</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/navbar/'>Navbar</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/popovers/'>Popovers</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/progress/'>Progress</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/tabs/'>Tabs</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-content' type='radio' name='collapsible'>
+          <label for="collapsible-content">Content</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/code/'>Code</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/images/'>Images</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/lists/'>Lists</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/tables/'>Tables</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/typography/'>Typography</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-layout' type='radio' name='collapsible'>
+          <label for="collapsible-layout">Layout</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/layout/flexbox/'>Flexbox</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-utilities' type='radio' name='collapsible'>
+          <label for="collapsible-utilities">Utilities</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/borders/'>Borders &amp; Shadows</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/colors/'>Colors</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/spacing/'>Spacing</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class='paper'>
+      <div class="row flex-center">
+        <p>Made with 🧡 by <a href="http://www.cesium.di.uminho.pt/" target="_blank">CeSIUM</a> using the <a href="https://github.com/rhyneav/papercss/">PaperCSS framework</a>.</p>
+      </div>
+    </div>
+</div>
+
+  </div>
+</body>
+
+</html>
+

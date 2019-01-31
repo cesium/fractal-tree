@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='The less formal CSS framework.'>
+<meta name='author' content='Rhyneav and PaperCSS contributors.'>
+
+
+<link rel="shortcut icon" type="image/x-icon" href="http://cesium.di.uminho.pt/assets/favicon-6a8bf11b293ceb49ab590fde8189584cbbd43ba2bbd0b3c446a6c331e1edbdf2.ico"/>
+
+
+<meta name="twitter:description" content="The less formal CSS framework">
+<meta name="twitter:title" content="PaperCSS">
+
+
+<meta property="og:url" content="https://www.getpapercss.com/">
+<meta property="og:title" content="PaperCSS">
+<meta property="og:description" content="The less formal CSS framework">
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <title>Cards | Fractal Tree • CeSIUM</title>
+  <link rel='canonical' href='https://cesium.github.io/fractal-tree/docs/components/cards/'>
+
+  
+<link rel='stylesheet' href='assets/paper.min.css'>
+<link rel='stylesheet' href='assets/demo.css'>
+</head>
+
+
+
+
+<body>
+  <div id='top' class='row site'>
+    <div class='sm-12 md-8 col'>
+        <div class='paper'>
+          <div class='demo-title'>
+            <div class='row flex-center'>
+              <div class='text-center'>
+                <h1>Fractal Tree • CeSIUM</h1>
+                <h3>Introductory programming sessions @ University of Minho</h3>
+              </div>
+            </div>
+
+            <div class="row flex-center child-borders">
+  <a class='paper-btn margin' href='/fractal-tree/'>Fractal Tree</a>
+  <a class='paper-btn margin' href='/fractal-tree/docs/'>Documentation</a>
+  <a class='paper-btn margin' href='/fractal-tree/about/'>About Us</a>
+  
+  <a href="https://github.com/rhyneav/papercss" target="_blank" class="paper-btn margin">Github</a>
+</div>
+
+          </div>
+          <div class="to-top">
+            <a href="#top" class="paper-btn margin">^</a>
+          </div>
+
+
+<div class='section'>
+  <h2>Cards</h2>
+  
+
+<h3 id="full-card-example">Full card example</h3>
+
+<p>It is possible to not put all the sub-classes like card-title, card-subtitle, card-text, &hellip; But instead the framework will recognize the element properly if it&rsquo;s a h4, h5, p, &hellip; And you need to put all this content on a div with card class.</p>
+
+<div class="row flex-center">
+  <div class="card" style="width: 20rem;">
+    <img class="image-top" src="https://picsum.photos/768" alt="Card example image">
+    <div class="card-body">
+      <h4 class="card-title">My awesome Paper card!</h4>
+      <h5 class="card-subtitle">Nice looking subtitle.</h5>
+      <p class="card-text">Notice that the card width in this example have been set to 20rem, otherwise it will try to fill the current container/row where the card is.</p>
+      <button>Let me go here!</button>
+    </div>
+  </div>
+</div>
+
+<h4 id="code">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card&#34;</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;width: 20rem;&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;https://picsum.photos/768&#34;</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;Card example image&#34;</span>&gt;
+
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-body&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">h4</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-title&#34;</span>&gt;My awesome Paper card!&lt;/<span style="color:#008000;font-weight:bold">h4</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">h5</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-subtitle&#34;</span>&gt;Nice looking subtitle.&lt;/<span style="color:#008000;font-weight:bold">h5</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-text&#34;</span>&gt;Notice that the card width in this example have been set to 20rem, otherwise it will try to fill the current container/row where the card is.&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">button</span>&gt;Let me go here!&lt;/<span style="color:#008000;font-weight:bold">button</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<h3 id="card-title-text-links">Card title, text, links</h3>
+
+<div class="row flex-center">
+  <div class="card" style="width: 20rem;">
+    <div class="card-body">
+      <h4 class="card-title">My awesome Paper card!</h4>
+      <h5 class="card-subtitle">Nice looking subtitle.</h5>
+      <p class="card-text">This is another example of a card without image. Cards are also meant to be used without images, but with text/links/buttons.</p>
+      <a class="card-link" href="#">First link</a>
+      <a class="card-link" href="#">Second link</a>
+    </div>
+  </div>
+</div>
+
+<h4 id="code-1">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card&#34;</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;width: 20rem;&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-body&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">h4</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-title&#34;</span>&gt;My awesome Paper card!&lt;/<span style="color:#008000;font-weight:bold">h4</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">h5</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-subtitle&#34;</span>&gt;Nice looking subtitle.&lt;/<span style="color:#008000;font-weight:bold">h5</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-text&#34;</span>&gt;This is another example of a card without image. Cards are also meant to be used without images, but with text/links/buttons.&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">a</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-link&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;#&#34;</span>&gt;First link&lt;/<span style="color:#008000;font-weight:bold">a</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">a</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-link&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;#&#34;</span>&gt;Second link&lt;/<span style="color:#008000;font-weight:bold">a</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<h3 id="image-on-top-or-bottom">Image on top or bottom</h3>
+
+<div class="row flex-center">
+  <div class="card" style="width: 20rem;">
+    <div class="card-body">
+      <h4 class="card-title">My awesome Paper card!</h4>
+      <h5 class="card-subtitle">Nice looking subtitle.</h5>
+      <p class="card-text">You can also place image on the bottom of the card.</p>
+      <button>Let me go here!</button>
+    </div>
+    <img class="image-bottom" src="https://unsplash.it/550/250" alt="Card example image">
+  </div>
+</div>
+
+<h4 id="code-2">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card&#34;</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;width: 20rem;&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-body&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">h4</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-title&#34;</span>&gt;My awesome Paper card!&lt;/<span style="color:#008000;font-weight:bold">h4</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">h5</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-subtitle&#34;</span>&gt;Nice looking subtitle.&lt;/<span style="color:#008000;font-weight:bold">h5</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-text&#34;</span>&gt;You can also place image on the bottom of the card.&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">button</span>&gt;Let me go here!&lt;/<span style="color:#008000;font-weight:bold">button</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;image-bottom&#34;</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;https://unsplash.it/550/250&#34;</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;Card example image&#34;</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<h3 id="header-and-footer">Header and footer</h3>
+
+<div class="row flex-center">
+  <div class="card" style="width: 20rem;">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h4 class="card-title">My awesome Paper card!</h4>
+      <h5 class="card-subtitle">Nice looking subtitle.</h5>
+      <p class="card-text">You can also place image on the bottom of the card.</p>
+      <button>Let me go here!</button>
+    </div>
+    <div class="card-footer">Footer</div>
+  </div>
+</div>
+
+<h4 id="code-3">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card&#34;</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;width: 20rem;&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-header&#34;</span>&gt;Header&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-body&#34;</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">h4</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-title&#34;</span>&gt;My awesome Paper card!&lt;/<span style="color:#008000;font-weight:bold">h4</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">h5</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-subtitle&#34;</span>&gt;Nice looking subtitle.&lt;/<span style="color:#008000;font-weight:bold">h5</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-text&#34;</span>&gt;You can also place image on the bottom of the card.&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">button</span>&gt;Let me go here!&lt;/<span style="color:#008000;font-weight:bold">button</span>&gt;
+    &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;card-footer&#34;</span>&gt;Footer&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+</div>
+
+        </div>
+    </div>
+    <div class='sm-12 md-4 col sidebar'>
+    
+    <div class='paper'>
+      <h3 class='sidebar-title' style='text-align:center'>
+        <a href='/docs'>Documentation</a>
+      </h3>
+      <div class='row'>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-components' type='radio' name='collapsible'>
+          <label for="collapsible-components">Components</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/alerts/'>Alerts</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/articles/'>Articles</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/badges/'>Badges</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/buttons/'>Buttons</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/cards/'>Cards</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/collapsible/'>Collapsibles</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/forms/'>Forms</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/modals/'>Modals</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/navbar/'>Navbar</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/popovers/'>Popovers</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/progress/'>Progress</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/tabs/'>Tabs</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-content' type='radio' name='collapsible'>
+          <label for="collapsible-content">Content</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/code/'>Code</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/images/'>Images</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/lists/'>Lists</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/tables/'>Tables</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/typography/'>Typography</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-layout' type='radio' name='collapsible'>
+          <label for="collapsible-layout">Layout</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/layout/flexbox/'>Flexbox</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-utilities' type='radio' name='collapsible'>
+          <label for="collapsible-utilities">Utilities</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/borders/'>Borders &amp; Shadows</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/colors/'>Colors</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/spacing/'>Spacing</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class='paper'>
+      <div class="row flex-center">
+        <p>Made with 🧡 by <a href="http://www.cesium.di.uminho.pt/" target="_blank">CeSIUM</a> using the <a href="https://github.com/rhyneav/papercss/">PaperCSS framework</a>.</p>
+      </div>
+    </div>
+</div>
+
+  </div>
+</body>
+
+</html>
+

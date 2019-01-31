@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fractal Tree on Fractal Tree • CeSIUM</title>
+    <link>https://cesium.github.io/fractal-tree/</link>
+    <description>Recent content in Fractal Tree on Fractal Tree • CeSIUM</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://cesium.github.io/fractal-tree/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Us</title>
+      <link>https://cesium.github.io/fractal-tree/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/about/</guid>
+      <description>CeSIUM is the student center whose mission is to represent and promote the Informatics Engineering course at the University of Minho.</description>
+    </item>
+    
+    <item>
+      <title>Alerts</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/alerts/</guid>
+      <description> Simple alerts Alert-primary  Alert-secondary  Alert-success  Alert-warning  Alert-danger   Code: &amp;lt;div class=&amp;#34;row flex-spaces&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;alert alert-primary&amp;#34;&amp;gt;Alert-primary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;alert alert-secondary&amp;#34;&amp;gt;Alert-secondary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;alert alert-success&amp;#34;&amp;gt;Alert-success&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;alert alert-warning&amp;#34;&amp;gt;Alert-warning&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;alert alert-danger&amp;#34;&amp;gt;Alert-danger&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Dismissible alerts Alert-primary X  Alert-secondary X  Alert-success X  Alert-warning X  Alert-danger X   Code: &amp;lt;div class=&amp;#34;row flex-spaces&amp;#34;&amp;gt; &amp;lt;input class=&amp;#34;alert-state&amp;#34; id=&amp;#34;alert-1&amp;#34; type=&amp;#34;checkbox&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;alert alert-primary dismissible&amp;#34;&amp;gt; Alert-primary &amp;lt;label class=&amp;#34;btn-close&amp;#34; for=&amp;#34;alert-1&amp;#34;&amp;gt;X&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;input class=&amp;#34;alert-state&amp;#34; id=&amp;#34;alert-2&amp;#34; type=&amp;#34;checkbox&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;alert alert-secondary dismissible&amp;#34;&amp;gt; Alert-secondary &amp;lt;label class=&amp;#34;btn-close&amp;#34; for=&amp;#34;alert-2&amp;#34;&amp;gt;X&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;input class=&amp;#34;alert-state&amp;#34; id=&amp;#34;alert-3&amp;#34; type=&amp;#34;checkbox&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;alert alert-success dismissible&amp;#34;&amp;gt; Alert-success &amp;lt;label class=&amp;#34;btn-close&amp;#34; for=&amp;#34;alert-3&amp;#34;&amp;gt;X&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;input class=&amp;#34;alert-state&amp;#34; id=&amp;#34;alert-4&amp;#34; type=&amp;#34;checkbox&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;alert alert-warning dismissible&amp;#34;&amp;gt; Alert-warning &amp;lt;label class=&amp;#34;btn-close&amp;#34; for=&amp;#34;alert-4&amp;#34;&amp;gt;X&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;input class=&amp;#34;alert-state&amp;#34; id=&amp;#34;alert-5&amp;#34; type=&amp;#34;checkbox&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;alert alert-danger dismissible&amp;#34;&amp;gt; Alert-danger &amp;lt;label class=&amp;#34;btn-close&amp;#34; for=&amp;#34;alert-5&amp;#34;&amp;gt;X&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Articles</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/articles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/articles/</guid>
+      <description>Article Title  Written by Super User on 24 November 2017. Posted in Blog Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure totam nam debitis aliquid impedit, et quas omnis aspernatur optio molestias ex laborum quia. Ducimus culpa tempore, veritatis officia delectus dolore dignissimos reprehenderit vero, sunt odit placeat est non molestiae ipsa nam velit in iusto hic quasi similique facere.</description>
+    </item>
+    
+    <item>
+      <title>Badges</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/badges/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/badges/</guid>
+      <description> Default You can customize badges colors with secondary, success, warning, danger classes.
+Example h1 heading 123 Example h2 heading 123 Example h3 heading 123 Example h4 heading 123 Example h5 heading 123 Example h6 heading 123 Code: &amp;lt;h1&amp;gt;Example h1 heading &amp;lt;span class=&amp;#34;badge&amp;#34;&amp;gt;123&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;Example h2 heading &amp;lt;span class=&amp;#34;badge secondary&amp;#34;&amp;gt;123&amp;lt;/span&amp;gt;&amp;lt;/h2&amp;gt; &amp;lt;h3&amp;gt;Example h3 heading &amp;lt;span class=&amp;#34;badge success&amp;#34;&amp;gt;123&amp;lt;/span&amp;gt;&amp;lt;/h3&amp;gt; &amp;lt;h4&amp;gt;Example h4 heading &amp;lt;span class=&amp;#34;badge warning&amp;#34;&amp;gt;123&amp;lt;/span&amp;gt;&amp;lt;/h4&amp;gt; &amp;lt;h5&amp;gt;Example h5 heading &amp;lt;span class=&amp;#34;badge danger&amp;#34;&amp;gt;123&amp;lt;/span&amp;gt;&amp;lt;/h5&amp;gt; &amp;lt;h6&amp;gt;Example h6 heading &amp;lt;span class=&amp;#34;badge&amp;#34;&amp;gt;123&amp;lt;/span&amp;gt;&amp;lt;/h6&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Borders &amp; Shadows</title>
+      <link>https://cesium.github.io/fractal-tree/docs/utilities/borders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/utilities/borders/</guid>
+      <description>Borders Default Border Border-2 Border-3  Border-4 Border-5 Border-6  Code: &amp;lt;div class=&amp;#34;row flex-spaces&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-primary&amp;#34;&amp;gt;Default Border&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-2 border-primary&amp;#34;&amp;gt;Border-2&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-3 border-primary&amp;#34;&amp;gt;Border-3&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;row flex-spaces&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-4 border-primary&amp;#34;&amp;gt;Border-4&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-5 border-primary&amp;#34;&amp;gt;Border-5&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col border border-6 border-primary&amp;#34;&amp;gt;Border-6&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Border Colors Border primary Border secondary Border success Border warning Border danger Border white  Code: &amp;lt;div class=&amp;#34;row child-borders&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-primary&amp;#34;&amp;gt;Border primary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-secondary&amp;#34;&amp;gt;Border secondary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-success&amp;#34;&amp;gt;Border success&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-warning&amp;#34;&amp;gt;Border warning&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-danger&amp;#34;&amp;gt;Border danger&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border background-primary border-white&amp;#34;&amp;gt;Border white&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;row child-borders&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-primary&amp;#34;&amp;gt;Border primary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-secondary&amp;#34;&amp;gt;Border secondary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-success&amp;#34;&amp;gt;Border success&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-warning&amp;#34;&amp;gt;Border warning&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border border-danger&amp;#34;&amp;gt;Border danger&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col border background-primary border-white&amp;#34;&amp;gt;Border white&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Child Borders Use this if you want all children to have a border.</description>
+    </item>
+    
+    <item>
+      <title>Buttons</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/buttons/</guid>
+      <description> Inspired by Imperfect Buttons
+Large Default Small Link
+Block level   Disabled Disabled
+Code: &amp;lt;p&amp;gt;Inspired by &amp;lt;a href=&amp;#34;https://codepen.io/tmrDevelops/pen/VeRvKX&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;Imperfect Buttons&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;button class=&amp;#34;btn-large&amp;#34;&amp;gt;Large&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;Default&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;btn-small&amp;#34;&amp;gt;Small&amp;lt;/button&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;paper-btn&amp;#34;&amp;gt;Link&amp;lt;/a&amp;gt; &amp;lt;div class=&amp;#34;row&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;col-6 col&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;btn-block&amp;#34;&amp;gt;Block level&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;button class=&amp;#34;disabled&amp;#34;&amp;gt;Disabled&amp;lt;/button&amp;gt; &amp;lt;button disabled&amp;gt;Disabled&amp;lt;/button&amp;gt; Colors Success Warning Danger
+Code: &amp;lt;input type=&amp;#34;button&amp;#34; class=&amp;#34;paper-btn btn-primary&amp;#34; value=&amp;#34;Primary&amp;#34;/&amp;gt; &amp;lt;input type=&amp;#34;button&amp;#34; class=&amp;#34;btn-secondary&amp;#34; value=&amp;#34;Secondary&amp;#34;/&amp;gt; &amp;lt;button class=&amp;#34;btn-success&amp;#34;&amp;gt;Success&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;btn-warning&amp;#34;&amp;gt;Warning&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;btn-danger&amp;#34;&amp;gt;Danger&amp;lt;/button&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Cards</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/cards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/cards/</guid>
+      <description>Full card example It is possible to not put all the sub-classes like card-title, card-subtitle, card-text, &amp;hellip; But instead the framework will recognize the element properly if it&amp;rsquo;s a h4, h5, p, &amp;hellip; And you need to put all this content on a div with card class.
+My awesome Paper card! Nice looking subtitle. Notice that the card width in this example have been set to 20rem, otherwise it will try to fill the current container/row where the card is.</description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://cesium.github.io/fractal-tree/docs/content/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/content/code/</guid>
+      <description> Let&amp;rsquo;s make some pretty &amp;lt;code&amp;gt;
+Print files backwards using tac
+To stop a process, hit ctrl + c
+function add(x, y) { return x + y; }  Code: &amp;lt;p&amp;gt;Let&amp;#39;s make some pretty &amp;lt;code&amp;gt;&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Print files backwards using &amp;lt;kbd&amp;gt;tac&amp;lt;/kbd&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;To stop a process, hit &amp;lt;kbd&amp;gt;ctrl + c&amp;lt;/kbd&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;function add(x, y) { return x + y; } &amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Collapsibles</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/collapsible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/collapsible/</guid>
+      <description>Collapsibles are elements that expand when you click on them. You can hide/reveal content back on clicking.
+First  Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.    Second  Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle.</description>
+    </item>
+    
+    <item>
+      <title>Colors</title>
+      <link>https://cesium.github.io/fractal-tree/docs/utilities/colors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/utilities/colors/</guid>
+      <description> Text Text primary
+Text secondary
+Text success
+Text warning
+Text danger
+Text muted
+Code: &amp;lt;p class=&amp;#34;text-primary&amp;#34;&amp;gt;Text primary&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;text-secondary&amp;#34;&amp;gt;Text secondary&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;text-success&amp;#34;&amp;gt;Text success&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;text-warning&amp;#34;&amp;gt;Text warning&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;text-danger&amp;#34;&amp;gt;Text danger&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;text-muted&amp;#34;&amp;gt;Text muted&amp;lt;/p&amp;gt;  Backgrounds Background primary Background secondary Background success Background warning Background danger  Code: &amp;lt;div class=&amp;#34;row flex-center&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col background-primary&amp;#34;&amp;gt;Background primary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col background-secondary&amp;#34;&amp;gt;Background secondary&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col background-success&amp;#34;&amp;gt;Background success&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col background-warning&amp;#34;&amp;gt;Background warning&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-2 col background-danger&amp;#34;&amp;gt;Background danger&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Flexbox</title>
+      <link>https://cesium.github.io/fractal-tree/docs/layout/flexbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/layout/flexbox/</guid>
+      <description>Flexgrid The flexgrid is a grid system that supports up to 12 columns per row. Because it uses flexbox (rather than just %widths), we also get the benefit of the fun parts of flexbox like alignment in more complex ways than normal.
+col-4 col col-4 col col-4 col  col-3 col col-9 col  sm-6 md-8 lg-10 col sm-6 md-4 lg-2 col  sm-5 col col-fill col col-fill col  Aligned Left (default)  Aligned Right (flex-right)  Aligned Center (flex-center)  Aligned to edges (flex-edges)  Aligned to be evenly spaced (flex-spaces)  Aligned top Aligned top Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Forms</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/forms/</guid>
+      <description> Input  Block Level   Block Level    Disabled  Large Input   No Resize   Select Option 1 Option 2 Option 3   Some Radio Buttons This is the first option   This is the second option    Some Check Boxes This is the first check  This is the second check  
+Code: &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;paperInputs1&amp;#34;&amp;gt;Input&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; placeholder=&amp;#34;Nice input&amp;#34; id=&amp;#34;paperInputs1&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;row&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;col sm-4&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;paperInputs2&amp;#34;&amp;gt;Block Level&amp;lt;/label&amp;gt; &amp;lt;input class=&amp;#34;input-block&amp;#34; type=&amp;#34;text&amp;#34; id=&amp;#34;paperInputs2&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;col sm-8&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;paperInputs3&amp;#34;&amp;gt;Block Level&amp;lt;/label&amp;gt; &amp;lt;input class=&amp;#34;input-block&amp;#34; type=&amp;#34;text&amp;#34; id=&amp;#34;paperInputs3&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;paperInputs4&amp;#34;&amp;gt;Disabled&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; placeholder=&amp;#34;Disabled&amp;#34; id=&amp;#34;paperInputs4&amp;#34; disabled&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;label&amp;gt;Large Input&amp;lt;/label&amp;gt; &amp;lt;textarea placeholder=&amp;#34;Large input&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;label&amp;gt;No Resize&amp;lt;/label&amp;gt; &amp;lt;textarea class=&amp;#34;no-resize&amp;#34; placeholder=&amp;#34;No resize&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;paperSelects1&amp;#34;&amp;gt;Select&amp;lt;/label&amp;gt; &amp;lt;select id=&amp;#34;paperSelects1&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;1&amp;#34;&amp;gt;Option 1&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;2&amp;#34;&amp;gt;Option 2&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;3&amp;#34;&amp;gt;Option 3&amp;lt;/option&amp;gt; &amp;lt;select&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;fieldset class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;legend&amp;gt;Some Radio Buttons&amp;lt;/legend&amp;gt; &amp;lt;label for=&amp;#34;paperRadios1&amp;#34; class=&amp;#34;paper-radio&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;paperRadios&amp;#34; id=&amp;#34;paperRadios1&amp;#34; value=&amp;#34;option 1&amp;#34;&amp;gt; &amp;lt;span&amp;gt;This is the first option&amp;lt;span&amp;gt; &amp;lt;/label&amp;gt; &amp;lt;label for=&amp;#34;paperRadios2&amp;#34; class=&amp;#34;paper-radio&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;paperRadios&amp;#34; id=&amp;#34;paperRadios2&amp;#34; value=&amp;#34;option 2&amp;#34;&amp;gt; &amp;lt;span&amp;gt;This is the second option&amp;lt;span&amp;gt; &amp;lt;/label&amp;gt; &amp;lt;/fieldset&amp;gt; &amp;lt;fieldset class=&amp;#34;form-group&amp;#34;&amp;gt; &amp;lt;legend&amp;gt;Some Check Boxes&amp;lt;/legend&amp;gt; &amp;lt;label for=&amp;#34;paperChecks1&amp;#34; class=&amp;#34;paper-check&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;checkbox&amp;#34; name=&amp;#34;paperChecks&amp;#34; id=&amp;#34;paperChecks1&amp;#34; value=&amp;#34;option 1&amp;#34;&amp;gt; &amp;lt;span&amp;gt;This is the first check&amp;lt;/span&amp;gt; &amp;lt;/label&amp;gt; &amp;lt;label for=&amp;#34;paperChecks2&amp;#34; class=&amp;#34;paper-check&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;checkbox&amp;#34; name=&amp;#34;paperChecks&amp;#34; id=&amp;#34;paperChecks2&amp;#34; value=&amp;#34;option 2&amp;#34;&amp;gt; &amp;lt;span&amp;gt;This is the second check&amp;lt;/span&amp;gt; &amp;lt;/label&amp;gt; &amp;lt;/fieldset&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://cesium.github.io/fractal-tree/docs/content/images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/content/images/</guid>
+      <description>Responsive Images by default are responsive
+Code: &amp;lt;img src=&amp;#34;https://unsplash.it/900&amp;#34; alt=&amp;#34;Random Unsplash&amp;#34;&amp;gt; Float You can also float responsive images to fit neatly with your text
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non elit sed lorem vulputate consectetur sed vel orci. Nunc orci metus, hendrerit viverra diam a, viverra efficitur nisi. Suspendisse ante sapien, porta vitae augue et, pulvinar posuere nibh. Suspendisse id commodo sem, vestibulum malesuada erat. Duis luctus est sit amet nisl maximus porta.</description>
+    </item>
+    
+    <item>
+      <title>Lists</title>
+      <link>https://cesium.github.io/fractal-tree/docs/content/lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/content/lists/</guid>
+      <description>Ordered Lists  Do this Then this Finally this Then we&#39;ll go one deeper  Dillon Francis  What if we went... One more deeper?  DJ Hanzel  Five levels should be enough Right?     But don&#39;t forget this  Unordered Lists  Let&#39;s try this Let&#39;s try this again  And now we are nested Pretty cool?  The list items are just text From this font  We&#39;ll keep going Until we hit  LEVEL 5     And now we&#39;re are the top!</description>
+    </item>
+    
+    <item>
+      <title>Modals</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/modals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/modals/</guid>
+      <description>Simple modal example This can be used to implement modals along with features like title, subtitle, text, button and links. Just use whichever component you need for your modal with proper classes and leave the rest on the framework.
+Open Modal!   X Modal Title Modal Subtitle This is an example of modal which is implemented with pure CSS! :D
+Nice!   Code: &amp;lt;div class=&amp;#34;row flex-spaces child-borders&amp;#34;&amp;gt; &amp;lt;label class=&amp;#34;paper-btn margin&amp;#34; for=&amp;#34;modal-1&amp;#34;&amp;gt;Open Modal!</description>
+    </item>
+    
+    <item>
+      <title>Navbar</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/navbar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/navbar/</guid>
+      <description> Get PaperCSS        Documentation About Github     Get PaperCSS        Documentation About Github     Code: Add .fixed to &amp;lt;nav&amp;gt; to fix the nav to the top to have it scroll the whole page. It&amp;rsquo;s also mobile responsive and will show a hamburger menu on small screens. No JavaScript required!
+&amp;lt;nav class=&amp;#34;border fixed split-nav&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;nav-brand&amp;#34;&amp;gt; &amp;lt;h3&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Get PaperCSS&amp;lt;/a&amp;gt;&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;collapsible&amp;#34;&amp;gt; &amp;lt;input id=&amp;#34;collapsible1&amp;#34; type=&amp;#34;checkbox&amp;#34; name=&amp;#34;collapsible1&amp;#34;&amp;gt; &amp;lt;button&amp;gt; &amp;lt;label for=&amp;#34;collapsible1&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;bar1&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;bar2&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;bar3&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/label&amp;gt; &amp;lt;/button&amp;gt; &amp;lt;div class=&amp;#34;collapsible-body&amp;#34;&amp;gt; &amp;lt;ul class=&amp;#34;inline&amp;#34;&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Documentation&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Github&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/nav&amp;gt; Not Split Navbar Get PaperCSS        Documentation About Github     Code: &amp;lt;nav class=&amp;#34;border fixed&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;nav-brand&amp;#34;&amp;gt; &amp;lt;h4&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Get PaperCSS&amp;lt;/a&amp;gt;&amp;lt;/h4&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;collapsible&amp;#34;&amp;gt; &amp;lt;input id=&amp;#34;collapsible2&amp;#34; type=&amp;#34;checkbox&amp;#34; name=&amp;#34;collapsible2&amp;#34;&amp;gt; &amp;lt;button&amp;gt; &amp;lt;label for=&amp;#34;collapsible2&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;bar1&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;bar2&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;bar3&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/label&amp;gt; &amp;lt;/button&amp;gt; &amp;lt;div class=&amp;#34;collapsible-body&amp;#34;&amp;gt; &amp;lt;ul class=&amp;#34;inline&amp;#34;&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Documentation&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Github&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/nav&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Popovers</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/popovers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/popovers/</guid>
+      <description>Basic usage You can add popovers, also called tooltips, on your elements. popover attribute is the popover text content, popover-position attribute can be: top, left, right, bottom.
+Popover left position
+ Popover top position
+ Popover bottom position
+ Popover right position
+  Code: &amp;lt;p popover-left=&amp;#34;Popover on left&amp;#34;&amp;gt;Popover left position&amp;lt;/p&amp;gt; &amp;lt;p popover-top=&amp;#34;Popover on top&amp;#34;&amp;gt;Popover top position&amp;lt;/p&amp;gt; &amp;lt;p popover-bottom=&amp;#34;Popover on bottom&amp;#34;&amp;gt;Popover bottom position&amp;lt;/p&amp;gt; &amp;lt;p popover-right=&amp;#34;Popover on right&amp;#34;&amp;gt;Popover right position&amp;lt;/p&amp;gt; But you can also popover on pretty much any element you want, it can be on a button, on a table cell, &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Progress</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/progress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/progress/</guid>
+      <description>Progress components are built with two HTML elements:
+ A .progress wrapper element. A .bar element to show the progress so far.  Basic usage            Code &amp;lt;div class=&amp;#34;row&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;progress margin-bottom&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;bar w-0&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;progress margin-bottom&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;bar w-25&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;progress margin-bottom&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;bar w-50&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;progress margin-bottom&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;bar w-75&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;progress margin-bottom&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;bar w-100&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Note how we can specify the width using .</description>
+    </item>
+    
+    <item>
+      <title>Spacing</title>
+      <link>https://cesium.github.io/fractal-tree/docs/utilities/spacing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/utilities/spacing/</guid>
+      <description> Margin Margin Margin-large Margin-top-small  Code: &amp;lt;div class=&amp;#34;row flex-spaces child-borders&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col margin&amp;#34;&amp;gt;Margin&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col margin-large&amp;#34;&amp;gt;Margin-large&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col margin-top-small&amp;#34;&amp;gt;Margin-top-small&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Padding Padding-small Padding-none Padding-left-large  Code: &amp;lt;div class=&amp;#34;row flex-spaces child-borders&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col padding-small&amp;#34;&amp;gt;Padding-small&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col padding-none&amp;#34;&amp;gt;Padding-none&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;sm-3 col padding-left-large&amp;#34;&amp;gt;Padding-left-large&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Tables</title>
+      <link>https://cesium.github.io/fractal-tree/docs/content/tables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/content/tables/</guid>
+      <description>Regular    # Name Position Location     1 Bob Dylan Musician California, USA   2 Eric Clapton Musician Ohio, USA   3 Daniel Kahneman Psychologist California, USA    Hover   # Name Position Location     1 Bob Dylan Musician California, USA   2 Eric Clapton Musician Ohio, USA   3 Daniel Kahneman Psychologist California, USA    Alternating   # Name Position Location     1 Bob Dylan Musician California, USA   2 Eric Clapton Musician Ohio, USA   3 Daniel Kahneman Psychologist California, USA    Code: &amp;lt;table&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;#&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Name&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Position&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Location&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;1&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Bob Dylan&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Musician&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;California, USA&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;2&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Eric Clapton&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Musician&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Ohio, USA&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;3&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Daniel Kahneman&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Psychologist&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;California, USA&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tbody&amp;gt; &amp;lt;/table&amp;gt; &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>Tabs</title>
+      <link>https://cesium.github.io/fractal-tree/docs/components/tabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/components/tabs/</guid>
+      <description>Tab 1 Tab 2 Tab 3 Tab 4  Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.  Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.   Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken.</description>
+    </item>
+    
+    <item>
+      <title>Typography</title>
+      <link>https://cesium.github.io/fractal-tree/docs/content/typography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cesium.github.io/fractal-tree/docs/content/typography/</guid>
+      <description>How pretty is the text?
+Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices, eros non elementum accumsan, massa nulla aliquam libero, ut posuere justo nibh ac ipsum. Aliquam blandit commodo justo at laoreet. Suspendisse potenti. Duis magna neque, venenatis non libero a, tincidunt convallis diam. Donec vel fermentum ante. Quisque diam nisl, vestibulum imperdiet sapien nec, interdum fringilla lorem.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='The less formal CSS framework.'>
+<meta name='author' content='Rhyneav and PaperCSS contributors.'>
+
+
+<link rel="shortcut icon" type="image/x-icon" href="http://cesium.di.uminho.pt/assets/favicon-6a8bf11b293ceb49ab590fde8189584cbbd43ba2bbd0b3c446a6c331e1edbdf2.ico"/>
+
+
+<meta name="twitter:description" content="The less formal CSS framework">
+<meta name="twitter:title" content="PaperCSS">
+
+
+<meta property="og:url" content="https://www.getpapercss.com/">
+<meta property="og:title" content="PaperCSS">
+<meta property="og:description" content="The less formal CSS framework">
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <title>Progress | Fractal Tree • CeSIUM</title>
+  <link rel='canonical' href='https://cesium.github.io/fractal-tree/docs/components/progress/'>
+
+  
+<link rel='stylesheet' href='assets/paper.min.css'>
+<link rel='stylesheet' href='assets/demo.css'>
+</head>
+
+
+
+
+<body>
+  <div id='top' class='row site'>
+    <div class='sm-12 md-8 col'>
+        <div class='paper'>
+          <div class='demo-title'>
+            <div class='row flex-center'>
+              <div class='text-center'>
+                <h1>Fractal Tree • CeSIUM</h1>
+                <h3>Introductory programming sessions @ University of Minho</h3>
+              </div>
+            </div>
+
+            <div class="row flex-center child-borders">
+  <a class='paper-btn margin' href='/fractal-tree/'>Fractal Tree</a>
+  <a class='paper-btn margin' href='/fractal-tree/docs/'>Documentation</a>
+  <a class='paper-btn margin' href='/fractal-tree/about/'>About Us</a>
+  
+  <a href="https://github.com/rhyneav/papercss" target="_blank" class="paper-btn margin">Github</a>
+</div>
+
+          </div>
+          <div class="to-top">
+            <a href="#top" class="paper-btn margin">^</a>
+          </div>
+
+
+<div class='section'>
+  <h2>Progress</h2>
+  
+
+<p>Progress components are built with two HTML elements:</p>
+
+<ul>
+<li>A <code>.progress</code> wrapper element.</li>
+<li>A <code>.bar</code> element to show the progress so far.</li>
+</ul>
+
+<h3 id="basic-usage">Basic usage</h3>
+
+<div class="row">
+  <div class="progress margin-bottom">
+    <div class="bar w-0"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar w-25"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar w-50"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar w-75"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar w-100"></div>
+  </div>
+</div>
+
+<h4 id="code">Code</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar w-0&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar w-25&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar w-50&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar w-75&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar w-100&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<p>Note how we can specify the width using <code>.w-50</code>, <code>.w-75</code>, etc. If a width class is not provided then 0% is used as default.</p>
+
+<h3 id="backgrounds">Backgrounds</h3>
+
+<div class="row">
+  <div class="progress margin-bottom">
+    <div class="bar w-25"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar secondary w-40"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar success w-55"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar warning w-70"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar danger w-85"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar muted w-100"></div>
+  </div>
+</div>
+
+<h4 id="code-1">Code</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar w-25&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar secondary w-40&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar success w-55&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar warning w-70&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar danger w-85&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar muted w-100&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<h3 id="labels">Labels</h3>
+
+<div class="row">
+  <div class="progress margin-bottom">
+    <div class="bar w-25">25%</div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar secondary w-40">40%</div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar success w-55">55%</div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar warning w-70">70%</div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar danger w-85">85%</div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar muted w-100">100%</div>
+  </div>
+</div>
+
+<h4 id="code-2">Code</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar w-25&#34;</span>&gt;25%&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar secondary w-40&#34;</span>&gt;40%&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar success w-55&#34;</span>&gt;55%&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar warning w-70&#34;</span>&gt;70%&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar danger w-85&#34;</span>&gt;85%&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar muted w-100&#34;</span>&gt;100%&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<h3 id="striped">Striped</h3>
+
+<div class="row">
+  <div class="progress margin-bottom">
+    <div class="bar striped w-25"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar striped secondary w-40"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar striped success w-55"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar striped warning w-70"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar striped danger w-85"></div>
+  </div>
+  <div class="progress margin-bottom">
+    <div class="bar striped muted w-100"></div>
+  </div>
+</div>
+
+<h4 id="code-3">Code</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar striped w-25&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar striped secondary w-40&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar striped success w-55&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar striped warning w-70&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar striped danger w-85&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;progress margin-bottom&#34;</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar striped muted w-100&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+</div>
+
+        </div>
+    </div>
+    <div class='sm-12 md-4 col sidebar'>
+    
+    <div class='paper'>
+      <h3 class='sidebar-title' style='text-align:center'>
+        <a href='/docs'>Documentation</a>
+      </h3>
+      <div class='row'>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-components' type='radio' name='collapsible'>
+          <label for="collapsible-components">Components</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/alerts/'>Alerts</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/articles/'>Articles</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/badges/'>Badges</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/buttons/'>Buttons</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/cards/'>Cards</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/collapsible/'>Collapsibles</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/forms/'>Forms</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/modals/'>Modals</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/navbar/'>Navbar</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/popovers/'>Popovers</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/progress/'>Progress</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/tabs/'>Tabs</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-content' type='radio' name='collapsible'>
+          <label for="collapsible-content">Content</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/code/'>Code</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/images/'>Images</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/lists/'>Lists</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/tables/'>Tables</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/typography/'>Typography</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-layout' type='radio' name='collapsible'>
+          <label for="collapsible-layout">Layout</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/layout/flexbox/'>Flexbox</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-utilities' type='radio' name='collapsible'>
+          <label for="collapsible-utilities">Utilities</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/borders/'>Borders &amp; Shadows</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/colors/'>Colors</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/spacing/'>Spacing</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class='paper'>
+      <div class="row flex-center">
+        <p>Made with 🧡 by <a href="http://www.cesium.di.uminho.pt/" target="_blank">CeSIUM</a> using the <a href="https://github.com/rhyneav/papercss/">PaperCSS framework</a>.</p>
+      </div>
+    </div>
+</div>
+
+  </div>
+</body>
+
+</html>
+

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='The less formal CSS framework.'>
+<meta name='author' content='Rhyneav and PaperCSS contributors.'>
+
+
+<link rel="shortcut icon" type="image/x-icon" href="http://cesium.di.uminho.pt/assets/favicon-6a8bf11b293ceb49ab590fde8189584cbbd43ba2bbd0b3c446a6c331e1edbdf2.ico"/>
+
+
+<meta name="twitter:description" content="The less formal CSS framework">
+<meta name="twitter:title" content="PaperCSS">
+
+
+<meta property="og:url" content="https://www.getpapercss.com/">
+<meta property="og:title" content="PaperCSS">
+<meta property="og:description" content="The less formal CSS framework">
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+  <title>Borders &amp; Shadows | Fractal Tree • CeSIUM</title>
+  <link rel='canonical' href='https://cesium.github.io/fractal-tree/docs/utilities/borders/'>
+
+  
+<link rel='stylesheet' href='assets/paper.min.css'>
+<link rel='stylesheet' href='assets/demo.css'>
+</head>
+
+
+
+
+<body>
+  <div id='top' class='row site'>
+    <div class='sm-12 md-8 col'>
+        <div class='paper'>
+          <div class='demo-title'>
+            <div class='row flex-center'>
+              <div class='text-center'>
+                <h1>Fractal Tree • CeSIUM</h1>
+                <h3>Introductory programming sessions @ University of Minho</h3>
+              </div>
+            </div>
+
+            <div class="row flex-center child-borders">
+  <a class='paper-btn margin' href='/fractal-tree/'>Fractal Tree</a>
+  <a class='paper-btn margin' href='/fractal-tree/docs/'>Documentation</a>
+  <a class='paper-btn margin' href='/fractal-tree/about/'>About Us</a>
+  
+  <a href="https://github.com/rhyneav/papercss" target="_blank" class="paper-btn margin">Github</a>
+</div>
+
+          </div>
+          <div class="to-top">
+            <a href="#top" class="paper-btn margin">^</a>
+          </div>
+
+
+<div class='section'>
+  <h2>Borders &amp; Shadows</h2>
+  
+
+<h3 id="borders">Borders</h3>
+
+<div class="row flex-spaces">
+  <div class="sm-3 col border border-primary">Default Border</div>
+  <div class="sm-3 col border border-2 border-primary">Border-2</div>
+  <div class="sm-3 col border border-3 border-primary">Border-3</div>
+</div>
+<div class="row flex-spaces">
+  <div class="sm-3 col border border-4 border-primary">Border-4</div>
+  <div class="sm-3 col border border-5 border-primary">Border-5</div>
+  <div class="sm-3 col border border-6 border-primary">Border-6</div>
+</div>
+
+<h4 id="code">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-spaces&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col border border-primary&#34;</span>&gt;Default Border&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col border border-2 border-primary&#34;</span>&gt;Border-2&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col border border-3 border-primary&#34;</span>&gt;Border-3&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-spaces&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col border border-4 border-primary&#34;</span>&gt;Border-4&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col border border-5 border-primary&#34;</span>&gt;Border-5&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col border border-6 border-primary&#34;</span>&gt;Border-6&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<h3 id="border-colors">Border Colors</h3>
+
+<div class="row child-borders">
+  <div class="sm-2 col border border-primary">Border primary</div>
+  <div class="sm-2 col border border-secondary">Border secondary</div>
+  <div class="sm-2 col border border-success">Border success</div>
+  <div class="sm-2 col border border-warning">Border warning</div>
+  <div class="sm-2 col border border-danger">Border danger</div>
+  <div class="sm-2 col border background-primary border-white">Border white</div>
+</div>
+
+<h4 id="code-1">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row child-borders&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border border-primary&#34;</span>&gt;Border primary&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border border-secondary&#34;</span>&gt;Border secondary&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border border-success&#34;</span>&gt;Border success&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border border-warning&#34;</span>&gt;Border warning&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border border-danger&#34;</span>&gt;Border danger&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border background-primary border-white&#34;</span>&gt;Border white&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row child-borders&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border border-primary&#34;</span>&gt;Border primary&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border border-secondary&#34;</span>&gt;Border secondary&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border border-success&#34;</span>&gt;Border success&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border border-warning&#34;</span>&gt;Border warning&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border border-danger&#34;</span>&gt;Border danger&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col border background-primary border-white&#34;</span>&gt;Border white&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<h3 id="child-borders">Child Borders</h3>
+
+<p>Use this if you want all children to have a border. This will alternate through the different border styles defined above instead of having to add the border class for each element.</p>
+
+<div class="row flex-center child-borders">
+  <div class="sm-2 col">1</div>
+  <div class="sm-2 col">2</div>
+  <div class="sm-2 col">3</div>
+  <div class="sm-2 col">4</div>
+  <div class="sm-2 col">5</div>
+  <div class="sm-2 col">6</div>
+</div>
+
+<h4 id="code-2">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-center child-borders&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col&#34;</span>&gt;1&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col&#34;</span>&gt;2&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col&#34;</span>&gt;3&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col&#34;</span>&gt;4&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col&#34;</span>&gt;5&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-2 col&#34;</span>&gt;6&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<h3 id="border-styles">Border Styles</h3>
+
+<div class="row flex-spaces child-borders">
+  <div class="sm-3 col border-dashed">Dashed</div>
+  <div class="sm-3 col border-dotted">Dotted</div>
+  <div class="sm-3 col border-dashed border-thick">Dashed Thick</div>
+  <div class="sm-3 col border-dotted border-thick">Dotted Thick</div>
+</div>
+
+<h4 id="code-3">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-spaces child-borders&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col border-dashed&#34;</span>&gt;Dashed&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col border-dotted&#34;</span>&gt;Dotted&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col border-dashed border-thick&#34;</span>&gt;Dashed Thick&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col border-dotted border-thick&#34;</span>&gt;Dotted Thick&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<h3 id="shadows">Shadows</h3>
+
+<div class="row flex-spaces child-borders">
+  <div class="sm-3 col shadow shadow-large">Large</div>
+  <div class="sm-3 col shadow">Default</div>
+  <div class="sm-3 col shadow shadow-small">Small</div>
+  <div class="sm-3 col shadow shadow-hover">Hover</div>
+</div>
+
+<h4 id="code-4">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-spaces child-borders&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col shadow shadow-large&#34;</span>&gt;Large&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col shadow&#34;</span>&gt;Default&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col shadow shadow-small&#34;</span>&gt;Small&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col shadow shadow-hover&#34;</span>&gt;Hover&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<h3 id="child-shadows">Child Shadows</h3>
+
+<p>Use this if you want all children to have a shadow.</p>
+
+<div class="row flex-spaces child-borders child-shadows">
+  <div class="sm-3 col">Shadow</div>
+  <div class="sm-3 col">Shadow</div>
+  <div class="sm-3 col">Shadow</div>
+</div>
+
+<h4 id="code-5">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-spaces child-borders child-shadows&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col&#34;</span>&gt;Shadow&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col&#34;</span>&gt;Shadow&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col&#34;</span>&gt;Shadow&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+<h3 id="child-shadows-hover">Child Shadows Hover</h3>
+
+<p>Use this if you want all children to have a shadow&hellip; that changes on hover</p>
+
+<div class="row flex-spaces child-borders child-shadows-hover">
+  <div class="sm-3 col">Shadow</div>
+  <div class="sm-3 col">Shadow</div>
+  <div class="sm-3 col">Shadow</div>
+</div>
+
+<h4 id="code-6">Code:</h4>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;row flex-spaces child-borders child-shadows-hover&#34;</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col&#34;</span>&gt;Shadow&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col&#34;</span>&gt;Shadow&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;sm-3 col&#34;</span>&gt;Shadow&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+</div>
+
+        </div>
+    </div>
+    <div class='sm-12 md-4 col sidebar'>
+    
+    <div class='paper'>
+      <h3 class='sidebar-title' style='text-align:center'>
+        <a href='/docs'>Documentation</a>
+      </h3>
+      <div class='row'>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-components' type='radio' name='collapsible'>
+          <label for="collapsible-components">Components</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/alerts/'>Alerts</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/articles/'>Articles</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/badges/'>Badges</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/buttons/'>Buttons</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/cards/'>Cards</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/collapsible/'>Collapsibles</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/forms/'>Forms</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/modals/'>Modals</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/navbar/'>Navbar</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/popovers/'>Popovers</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/progress/'>Progress</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/components/tabs/'>Tabs</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-content' type='radio' name='collapsible'>
+          <label for="collapsible-content">Content</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/code/'>Code</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/images/'>Images</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/lists/'>Lists</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/tables/'>Tables</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/content/typography/'>Typography</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-layout' type='radio' name='collapsible'>
+          <label for="collapsible-layout">Layout</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/layout/flexbox/'>Flexbox</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+        <div class='collapsible full-width'>
+          <input id='collapsible-utilities' type='radio' name='collapsible'>
+          <label for="collapsible-utilities">Utilities</label>
+          <div class="collapsible-body">
+            <ul>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/borders/'>Borders &amp; Shadows</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/colors/'>Colors</a>
+              </li>
+            
+              <li>
+                <a href='/fractal-tree/docs/utilities/spacing/'>Spacing</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class='paper'>
+      <div class="row flex-center">
+        <p>Made with 🧡 by <a href="http://www.cesium.di.uminho.pt/" target="_blank">CeSIUM</a> using the <a href="https://github.com/rhyneav/papercss/">PaperCSS framework</a>.</p>
+      </div>
+    </div>
+</div>
+
+  </div>
+</body>
+
+</html>
+
