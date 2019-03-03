@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Snake Game on Fractal Tree • CeSIUM</title>
+    <title>Fractal Tree on Fractal Tree • CeSIUM</title>
     <link>https://cesium.github.io/fractal-tree/</link>
-    <description>Recent content in Snake Game on Fractal Tree • CeSIUM</description>
+    <description>Recent content in Fractal Tree on Fractal Tree • CeSIUM</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="https://cesium.github.io/fractal-tree/index.xml" rel="self" type="application/rss+xml" />

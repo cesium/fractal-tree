@@ -10,8 +10,6 @@ This projects has the goal of making a factral tree. From the get go lets explai
 
 ![](finalTree.png)
 
-
-
 in the end of this tutorial you will obtain the power to make one of these incredible don't you think?
 
 ### Setup
@@ -397,19 +395,18 @@ plot twist it doesn't work
 why it seemed so right? well remenber translate it is his fault since you always changed the "starting" point to the top of the branch it doesn't come back to make it to the left side insted goes always right and makes the patern only there making, a funny but not intended result.To solve this problem is quiet easy use push and pop, push saves the intial position that you were before applying the if condition then you do branch like usually and when the if condition makes you stop you pop, it means you go back to the state saved in push, up to this point you have only done the right side of the tree now for the left side just push and pop again but this time to the negative angle and magic will happen
 
 ```javascript
-
 let angle;
 let slider;
 
 function setup() {
     createCanvas(400, 400);
-	  angleMode(DEGREES);
-	  slider = createSlider(0, 180, 45, 1);
+    angleMode(DEGREES);
+    slider = createSlider(0, 180, 45, 1);
 }
 
 function draw() {
     background(220);
-	angle = slider.value();
+    angle = slider.value();
     stroke(255);
     translate(200, 400);
     branch(100);
@@ -418,20 +415,19 @@ function draw() {
 function branch(len) {
     line(0, 0, 0, -len);
     translate(0, -len);
-	if (len > 4) {
-    push();
-      rotate(angle);
-      branch(len*0.7);
-    pop();
-    push();
-      rotate(-angle);
-      branch(len * 0.7
-    pop();
+
+    if (len > 4) {
+        push();
+          rotate(angle);
+          branch(len*0.7);
+        pop();
+        push();
+          rotate(-angle);
+          branch(len * 0.7
+        pop();
+    }
 
 }
-	
-}
-
 ```
 
 ![](finalTree.png)

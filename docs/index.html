@@ -20,16 +20,15 @@
 <meta property="og:description" content="The less formal CSS framework">
 
 
-<meta name="generator" content="Hugo 0.53" />
+<meta name="generator" content="Hugo 0.54.0" />
 
 
   <title>Fractal Tree • CeSIUM | Introductory programming sessions @ University of Minho</title>
   <link rel='canonical' href='https://cesium.github.io/fractal-tree/'>
 
   
-<link rel='stylesheet' href='https://unpkg.com/papercss@1.6.0/dist/paper.min.css'>
+<link rel='stylesheet' href='assets/paper.min.css'>
 <link rel='stylesheet' href='assets/demo.css'>
-
 </head>
 
 
@@ -48,7 +47,7 @@
             </div>
 
             <div class="row flex-center child-borders">
-  <a class='paper-btn margin current' href='/fractal-tree/'>Snake Game</a>
+  <a class='paper-btn margin current' href='/fractal-tree/'>Fractal Tree</a>
   <a class='paper-btn margin' href='/fractal-tree/docs/'>Documentation</a>
   <a class='paper-btn margin' href='/fractal-tree/about/'>About Us</a>
   
@@ -62,66 +61,368 @@
 
 
 <div class='section'>
-  <h2>Snake Game</h2>
+  <h2>Fractal Tree</h2>
   
 
-<h4 id="download">Download</h4>
+<h2 id="introduction">Introduction</h2>
 
-<p>Download the latest version (1.6.0) using either of the links below. Or
-download an older release via Github.</p>
+<p>This projects has the goal of making a factral tree. From the get go lets explain whats a fractal, well a fractal is a infinite repeation of a certain patern in this particular case our patern is the &ldquo;Y&rdquo; this may not seem clear now but it will soon don&rsquo;t worry. Now that you know what a fractral is a fractal tree is simply a fractal that makes a tree as its final form. Okay after this basic explanation lets get it started!</p>
 
-<div class="row flex-spaces text-center">
-  <a class="paper-btn margin" href="https://github.com/rhyneav/papercss/releases/download/v1.6.0/paper.css">CSS File</a>
-  <a class="paper-btn margin" href="https://github.com/rhyneav/papercss/releases/download/v1.6.0/paper.min.css">Minified CSS File</a>
-  <a class="paper-btn margin" href="https://github.com/rhyneav/papercss/releases">Github Releases</a>
-</div>
+<p><img src="finalTree.png" alt="" /></p>
 
-<h4 id="npm">NPM</h4>
+<p>in the end of this tutorial you will obtain the power to make one of these incredible don&rsquo;t you think?</p>
 
-<p>PaperCSS is available on NPM, current version 1.6.0. Install with <code>npm install papercss &ndash;save</code> and find the CSS in:</p>
+<h3 id="setup">Setup</h3>
 
-<ul>
-<li>node_modules/papercss/dist/paper.css</li>
-<li>node_modules/papercss/dist/paper.min.css</li>
-</ul>
+<h4 id="web-browser">Web Browser</h4>
 
-<h4 id="cdn">CDN</h4>
-
-<p>Don&rsquo;t want to download it? That&rsquo;s cool. You can just link to PaperCSS via
-<a href="https://unpkg.com/#/" target="_blank">unpkg&rsquo;s CDN</a>. You can use either:</p>
+<p>The method used to access the internet some examples of web browsers:</p>
 
 <ul>
-<li><a href="https://unpkg.com/papercss@1.6.0/dist/paper.css" target="_blank">https://unpkg.com/papercss@1.6.0/dist/paper.css</a></li>
-<li><a href="https://unpkg.com/papercss@1.6.0/dist/paper.min.css" target="_blank">https://unpkg.com/papercss@1.6.0/dist/paper.min.css</a></li>
+<li>Google Chrome</li>
+<li>Mozila FireFox</li>
+<li>Microsoft Edge</li>
+<li>Safari</li>
+<li>Opera</li>
 </ul>
 
-<p>Here&rsquo;s a quck snippet to get started with PaperCSS:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#080">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#008000;font-weight:bold">html</span> <span style="color:#b44">lang</span><span style="color:#666">=</span><span style="color:#b44">&#34;en&#34;</span>&gt;
-&lt;<span style="color:#008000;font-weight:bold">head</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">meta</span> <span style="color:#b44">charset</span><span style="color:#666">=</span><span style="color:#b44">&#34;UTF-8&#34;</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">meta</span> <span style="color:#b44">name</span><span style="color:#666">=</span><span style="color:#b44">&#34;viewport&#34;</span> <span style="color:#b44">content</span><span style="color:#666">=</span><span style="color:#b44">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">meta</span> <span style="color:#b44">http-equiv</span><span style="color:#666">=</span><span style="color:#b44">&#34;X-UA-Compatible&#34;</span> <span style="color:#b44">content</span><span style="color:#666">=</span><span style="color:#b44">&#34;ie=edge&#34;</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;https://unpkg.com/papercss@1.6.0/dist/paper.min.css&#34;</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">title</span>&gt;Document&lt;/<span style="color:#008000;font-weight:bold">title</span>&gt;
-&lt;/<span style="color:#008000;font-weight:bold">head</span>&gt;
-&lt;<span style="color:#008000;font-weight:bold">body</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;paper container&#34;</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">h1</span>&gt;Some Fresh Title&lt;/<span style="color:#008000;font-weight:bold">h1</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">p</span>&gt;This is where some content would go.&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
-  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#008000;font-weight:bold">body</span>&gt;
-&lt;/<span style="color:#008000;font-weight:bold">html</span>&gt;</code></pre></div>
-<h4 id="build-it-yourself">Build it Yourself</h4>
+<p>And so many others but these are more common</p>
 
-<p>If you&rsquo;d rather customize things, you can build the CSS yourself via the git repo</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone https://github.com/papercss/papercss.git
-<span style="color:#a2f">cd</span> papercss
-npm install
-npm run build</code></pre></div>
-<p>Grab the CSS out of the /dist folder created</p>
+<h4 id="text-editor-web-editor">Text Editor / Web Editor</h4>
 
-<p>You can also go into src/core/_config.scss before building to change around the global styles of your new CSS.</p>
+<p>So as a writer needs his pen and paper, so you need yours, in your case its an editor, place where magic happens, where you write your code, where you fail, where you sometimes(most of them) rage but most mainly where you succed so even though its hard to hustle never give up and keep it up in the long run it will be worth it. Some examples of text editors are the follings:</p>
+
+<ul>
+<li><a href="https://www.sublimetext.com/3" target="_blank">Sublime Text 3</a></li>
+<li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
+<li><a href="https://atom.io/" target="_blank">Atom</a></li>
+<li><a href="https://notepad-plus-plus.org/download/" target="_blank">Notepad++</a></li>
+</ul>
+
+<p>And a milion of others have fun searching for them&hellip;</p>
+
+<h3 id="basics">Basics</h3>
+
+<p>For this Project you will need some acquired knowladge since this tutorial is amazing the knowladge will be given for free</p>
+
+<p>Note:
+To define/use fuctions you need to call them, thats pretty simple here is a small example</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> whatever() {
+
+}
+</code></pre></div>
+<p>obviously this function does nothing because has nothing inside so lets learn what to put insane to create the factral tree</p>
+
+<h4 id="createcanvas">CreateCanvas</h4>
+
+<p>Just like in a painting you need some sort of place to be your canvas like the name sugests, insane right? So what do you do to use this funcion basicly do createCanvas next to it in paranteses put first the heigth followed by the weigth obviously with a comma in the middle, finally you have your canvas so lets begin to create art (yeah programing is art).</p>
+
+<p>Note:
+fun fact the canvas you just created its heigth grows to the right like it usually does but its weigth doesn&rsquo;t grows upwards like you are used to, it grows to the opposite side or downwards(why does it happen? well thats a chalange for you to overcome) so take it into account when doing your tree.</p>
+
+<p>Example:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> canvas() {
+    createCanvas(<span style="color:#666">200</span>,<span style="color:#666">200</span>);
+}
+</code></pre></div>
+<p>in this example the canvas has a (200,200) dimension</p>
+
+<h4 id="background">Background</h4>
+
+<p>Since a blend canvas is boring and programing is not you need to give it a little bit of life, to do so you use background that allows to edit your canvas color from 0 to 256, being from black to white respectively.</p>
+
+<p>Example:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> color() {
+    background(<span style="color:#666">0</span>);
+}
+</code></pre></div>
+<p>The background is now Black yeah</p>
+
+<h4 id="line">Line</h4>
+
+<p>With your &ldquo;base&rdquo; set now lets learn how to draw in this case lines,so what do need to draw a line ? exactly two points, so give the function two points (heigth,weigth) and let &ldquo;line&rdquo; do its job (unite those points) see as easy as it can be.</p>
+
+<p>Note:
+have into account that you need to give one point then another so have into consideration you only have two coordinates you work with so line can only have four arguments (numbers) and three commas</p>
+
+<p>Example:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> draw() {
+    line(<span style="color:#666">0</span>,<span style="color:#666">0</span>,<span style="color:#666">10</span>,<span style="color:#666">10</span>);
+}
+</code></pre></div>
+<p>Here the first point is (0,0) the second one (10,10) and line unifies both</p>
+
+<h4 id="translate">Translate</h4>
+
+<p>Ever wanted to change orgin of the axis from the good old (0,0) to whatever origin you wanted ? well translate make your dreams come true, whats the point you may ask yourself well latter while creating your tree you will understand so take this into account that will help you a lot, to use it up to this point its bread and butter do translate and in parenteses choose new coordinates to its center</p>
+
+<p>Example:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> translation() {
+    translate(<span style="color:#666">10</span>,<span style="color:#666">10</span>);
+}
+</code></pre></div>
+<p>Origin of the axis is now (10,10)</p>
+
+<h4 id="rotate">Rotate</h4>
+
+<p>Almost done with to the Basics and to end it nothing better than rotate that allows you to rotate the axis,the rotation made is made based on the angle given to rotate.</p>
+
+<p>Example:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> rotation() {
+    rotate(PI<span style="">/4);</span>
+}
+</code></pre></div>
+<p>the axis is rotated now 45 degrees</p>
+
+<p>After this brief knowladge lets finally start coding!</p>
+
+<h2 id="start">Start</h2>
+
+<p>Since starting line must be somewhere this time is with createCanvas and background (explained before) thats given out even before you even think about it</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
+    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> draw() {
+    background(<span style="color:#666">220</span>);
+}
+</code></pre></div>
+<p>The &ldquo;Base&rdquo; is now ready to improvement so the first step to make the tree happen is to draw its trunk, well to do it lets use line but where should you do it ? since canvas size is a 400x400 lets do it in the bottom middle of canvas that is 200x200 with 100 length and to make it simpler to understand lets make another function with it and call it branch later will be usefull so just make it now</p>
+
+<p>Note:
+by creating a new function you must call it on the &ldquo;main&rdquo; one, in this case is &ldquo;draw&rdquo; so to call &ldquo;branch&rdquo; just go to &ldquo;draw&rdquo; and do &ldquo;branch();&rdquo;</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
+    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> draw() {
+    background(<span style="color:#666">220</span>);
+    stroke(<span style="color:#666">255</span>);
+    branch();
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> branch() {
+    line(<span style="color:#666">200</span>, <span style="color:#666">400</span>, <span style="color:#666">200</span>, <span style="color:#666">300</span>);
+}
+</code></pre></div>
+<p>don&rsquo;t give too much importance to stroke is simply the color desired for the line in this case white</p>
+
+<p>if everything is done correctly it should look like this</p>
+
+<p><img src="trunk.png" alt="" /></p>
+
+<p>the trunk is now established next step is to draw branches to do so using a variable is optimal, since lots of branches will be needed and to make the tree do it recursively is the way to go so how do you do it? first and foremost to define a variable you do it inside the paranteses of the funcion you want that variable to be into in this case its branch, lets name it len since it will define the length of branches lets try then to write the same code but now with the variable len</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
+    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> draw() {
+    background(<span style="color:#666">220</span>);
+    stroke(<span style="color:#666">255</span>);
+    branch(<span style="color:#666">100</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
+    line(<span style="color:#666">200</span>, <span style="color:#666">400</span>, <span style="color:#666">200</span>, <span style="color:#666">400</span> <span style="color:#666">-</span> len);
+}
+</code></pre></div>
+<p>Note:
+when calling branch, 100 is the value of len</p>
+
+<p>using variables is now on skill list but drawing lines from a specific point in this case from (200, 400) to (200, 300) its a pain since the goal is to draw a tree recursively so a simple way to do it is simply starting to draw from the axis origin and then define a patern so what should you use to do so ? the anwser here is translate defining axis origin the middle bottom then starting to make the tree grow from there but by doing this you also need to chance line because its no more a specific point but the axis origin much easier right?</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
+    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> draw() {
+    background(<span style="color:#666">220</span>);
+    stroke(<span style="color:#666">255</span>);
+    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
+    branch(<span style="color:#666">100</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
+    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+}
+</code></pre></div>
+<p>Note:
+remenber that axis is inverted so len must be negative thats why its -len</p>
+
+<h2 id="development">Development</h2>
+
+<p>trunk is fixed and strong to grow big so lets do it, lets draw branches to the tree but going straight ahead its not very treeable, lets go sideways then seems good to do so you need to change the angle you will draw onto, rotate is the way to go but just for testing mesuares lets only go to the right now that rotate is used there only one thing left before draw the branch what is ? correct moving the axis origin to the trunk&rsquo;s top by using translate again, now all conditions are met lets draw branches</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
+    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> draw() {
+    background(<span style="color:#666">220</span>);
+    stroke(<span style="color:#666">255</span>);
+    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
+    branch(<span style="color:#666">100</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
+    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    rotate(PI<span style="">/4);</span>
+    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+}
+</code></pre></div>
+<p><img src="branch.png" alt="" /></p>
+
+<p>your tree now has a new branch yeah but if you really wanna make a real tree branches as you go up on it will grow smaller so how do you make it possible ? simple see how you did line again well that basicly doing branch function so insted of doing line just call branch with a smaller value or by other means multiply the initial given number by another smaller than 1 lets use 0.7 here</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
+    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> draw() {
+    background(<span style="color:#666">220</span>);
+    stroke(<span style="color:#666">255</span>);
+    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
+    branch(<span style="color:#666">100</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
+    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    rotate(PI<span style="">/4);</span>
+    branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>);
+}
+</code></pre></div>
+<p>surprise it exploded or by other means this happened</p>
+
+<p><img src="crash.png" alt="" /></p>
+
+<p>well its no surprise there&rsquo;s no limitation/condition to make it stop then it created an infinte loop and eventually went boom,so lets make a stop point so eventually it stops and don&rsquo;t explodes anymore, in order for it to happen use if paranteses and inside the condition you want for branch to stop here lets use len &gt; 4 implement the if condition before with branch inside and it will stop when len is minus or equal to 4 in this case, so lets try it</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
+    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> draw() {
+    background(<span style="color:#666">220</span>);
+    stroke(<span style="color:#666">255</span>);
+    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
+    branch(<span style="color:#666">100</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
+    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    rotate(PI<span style="">/4);</span>
+    <span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
+        branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>)
+    }
+}
+</code></pre></div>
+<p><img src="tail.png" alt="" /></p>
+
+<p>see it didn&rsquo;t go boom anymore but if you want to adjust the angle without changing it every single time,first lets make the angle a variable so its easier to adjust for so making a slider is the way to go, how do you make a slider you ask use createSlider after in paranteses obviously (take into account that createslider needs four arguments), firsly in the first two aguments you put the slider range here it will be from 0 to 180 (from this point onwards lets stop using radiants and start to use degrees, for it use angleMode(DEGREES), it sets the angle to degrees, if you have difficulties doing so click <a href="https://en.wikipedia.org/wiki/Radian" target="_blank">here</a>), then on the third argument put the starting point here its 45 and finally how much you want to move by changing the slider 1 seems okay here, so lets implement this to the code</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">let</span> angle;
+<span style="color:#a2f;font-weight:bold">let</span> slider;
+
+<span style="color:#a2f;font-weight:bold">function</span> setup() {
+    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+	  angleMode(DEGREES);
+	  slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> draw() {
+    background(<span style="color:#666">220</span>);
+	angle <span style="color:#666">=</span> slider.value();
+    stroke(<span style="color:#666">255</span>);
+    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
+    branch(<span style="color:#666">100</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
+    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    rotate(angle);
+	<span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
+      branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>);
+}
+	
+}
+</code></pre></div>
+<p>in case you are wondering &ldquo;angle = slider.value();&rdquo; is simply saying the slider created is apllied to the angle range also let is used to define the variable name insted of creating a function easier and most important less work</p>
+
+<p>rightside is now done so to do left side is simply rotating to the opposite side by doing -angle and calling branch again everything on the if condition made before</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">let</span> angle;
+<span style="color:#a2f;font-weight:bold">let</span> slider;
+
+<span style="color:#a2f;font-weight:bold">function</span> setup() {
+    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+	  angleMode(DEGREES);
+	  slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> draw() {
+    background(<span style="color:#666">220</span>);
+	angle <span style="color:#666">=</span> slider.value();
+    stroke(<span style="color:#666">255</span>);
+    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
+    branch(<span style="color:#666">100</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
+    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    
+	<span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
+      rotate(angle);
+      branch(len<span style="color:#666">*</span><span style="color:#666">0.7</span>);
+      rotate(<span style="color:#666">-</span>angle);
+      branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>
+
+}
+	
+}
+</code></pre></div>
+<p><img src="reverse.png" alt="" /></p>
+
+<p>plot twist it doesn&rsquo;t work</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>why it seemed so right? well remenber translate it is his fault since you always changed the &ldquo;starting&rdquo; point to the top of the branch it doesn&rsquo;t come back to make it to the left side insted goes always right and makes the patern only there making, a funny but not intended result.To solve this problem is quiet easy use push and pop, push saves the intial position that you were before applying the if condition then you do branch like usually and when the if condition makes you stop you pop, it means you go back to the state saved in push, up to this point you have only done the right side of the tree now for the left side just push and pop again but this time to the negative angle and magic will happen</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">let</span> angle;
+<span style="color:#a2f;font-weight:bold">let</span> slider;
+
+<span style="color:#a2f;font-weight:bold">function</span> setup() {
+    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+	  angleMode(DEGREES);
+	  slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> draw() {
+    background(<span style="color:#666">220</span>);
+	angle <span style="color:#666">=</span> slider.value();
+    stroke(<span style="color:#666">255</span>);
+    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
+    branch(<span style="color:#666">100</span>);
+}
+
+<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
+    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+	<span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
+    push();
+      rotate(angle);
+      branch(len<span style="color:#666">*</span><span style="color:#666">0.7</span>);
+    pop();
+    push();
+      rotate(<span style="color:#666">-</span>angle);
+      branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>
+    pop();
+
+}
+	
+}
+</code></pre></div>
+<p><img src="finalTree.png" alt="" /></p>
+
+<p>your hardwork payed off the tree is finally done this is a basic one now that you have this basic knowladge how to make a fractral tree try to improve it making a chirstmas tree or give your imagination/creativity wings and fly create your own and unique tree now that you are up to the chalange go and fly</p>
 
 </div>
 
