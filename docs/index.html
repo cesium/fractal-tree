@@ -66,7 +66,12 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>This project has the goal of making a factual tree. From the get-go lets explain what a fractal, well a fractal is an infinite repetition of a certain pattern in this particular case our pattern is the &ldquo;Y&rdquo; this may not seem clear now but it will soon don&rsquo;t worry. Now that you know what a fractal is a fractal tree is simply a fractal that makes a tree as its final form. Okay after this basic explanation lets get it started!</p>
+<p>This project has the goal of making a fractal tree. From the get-go lets
+explain what a fractal, well a fractal is an infinite repetition of a certain
+pattern in this particular case our pattern is the &ldquo;Y&rdquo; this may not seem clear
+now but it will soon don&rsquo;t worry. Now that you know what a fractal is a fractal
+tree is simply a fractal that makes a tree as its final form. Okay after this
+basic explanation lets get it started!</p>
 
 <p><img src="finalTree.png" alt="" /></p>
 
@@ -80,13 +85,13 @@
 
 <ul>
 <li>Google Chrome</li>
-<li>Mozila FireFox</li>
+<li>MozillaFfirefox</li>
 <li>Microsoft Edge</li>
 <li>Safari</li>
 <li>Opera</li>
 </ul>
 
-<p>And so many others but these are more common</p>
+<p>And so many others.</p>
 
 <h4 id="text-editor-web-editor">Text Editor / Web Editor</h4>
 
@@ -99,7 +104,7 @@
 <li><a href="https://notepad-plus-plus.org/download/" target="_blank">Notepad++</a></li>
 </ul>
 
-<p>And a milion of others have fun searching for them&hellip;</p>
+<p>And a million of others have fun searching for them&hellip;</p>
 
 <h3 id="basics">Basics</h3>
 
@@ -140,7 +145,10 @@ fun fact the canvas you just created its height grows to the right like it usual
 
 <h4 id="line">Line</h4>
 
-<p>With your &ldquo;base&rdquo; set now lets learn how to draw in this case lines,so what do need to draw a line ? exactly two points, so give the function two points (height,weight) and let &ldquo;line&rdquo; do its job (unite those points) see as easy as it can be.</p>
+<p>With your &ldquo;base&rdquo; set now lets learn how to draw in this case lines,so what do
+need to draw a line ? Exactly two points, so give the function two points
+(height,weight) and let &ldquo;line&rdquo; do its job (unite those points) see as easy as
+it can be.</p>
 
 <p>Note:
 have into account that you need to give one point then another so have into consideration you only have two coordinates you work with so line can only have four arguments (numbers) and three commas</p>
@@ -174,7 +182,7 @@ have into account that you need to give one point then another so have into cons
 </code></pre></div>
 <p>the axis is rotated now 45 degrees</p>
 
-<p>After this brief knowladge lets finally start coding!</p>
+<p>After this brief knowledge lets finally start coding!</p>
 
 <h2 id="start">Start</h2>
 
@@ -207,11 +215,17 @@ by creating a new function you must call it on the &ldquo;main&rdquo; one, in th
 </code></pre></div>
 <p>don&rsquo;t give too much importance to stroke is simply the color desired for the line in this case white</p>
 
-<p>if everything is done correctly it should look like this</p>
+<p>If everything is done correctly it should look like this:</p>
 
 <p><img src="trunk.png" alt="" /></p>
 
-<p>the trunk is now established next step is to draw branches to do so using a variable is optimal, since lots of branches will be needed and to make the tree do it recursively is the way to go so how do you do it? first and foremost to define a variable you do it inside the parentheses of the function you want that variable to be into in this case its branch, let&rsquo;s name it len since it will define the length of branches lets try then to write the same code but now with the variable len</p>
+<p>The trunk is now established next step is to draw branches to do so using a
+variable is optimal, since lots of branches will be needed and to make the tree
+do it recursively is the way to go so how do you do it? First and foremost to
+define a variable you do it inside the parentheses of the function you want
+that variable to be into in this case its branch, let&rsquo;s name it <code>len</code> since it
+will define the length of branches lets try then to write the same code but now
+with the variable <code>len</code>.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
     createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
 }
@@ -226,10 +240,14 @@ by creating a new function you must call it on the &ldquo;main&rdquo; one, in th
     line(<span style="color:#666">200</span>, <span style="color:#666">400</span>, <span style="color:#666">200</span>, <span style="color:#666">400</span> <span style="color:#666">-</span> len);
 }
 </code></pre></div>
-<p>Note:
-when calling branch, 100 is the value of len</p>
-
-<p>using variables is now on skill list but drawing lines from a specific point in this case from (200, 400) to (200, 300) its a pain since the goal is to draw a tree recursively so a simple way to do it is simply starting to draw from the axis origin and then define a pattern so what should you use to do so ? the answer here is translated defining axis origin the middle bottom then starting to make the tree grow from there but by doing this you also need to chance line because it&rsquo;s no more a specific point but the axis origin much easier right?</p>
+<p>Note: when calling branch, 100 is the value of <code>len</code> using variables is now on
+skill list but drawing lines from a specific point in this case from (200, 400)
+to (200, 300) its a pain since the goal is to draw a tree recursively so a
+simple way to do it is simply starting to draw from the axis origin and then
+define a pattern so what should you use to do so ? The answer here is
+translated defining axis origin the middle bottom then starting to make the
+tree grow from there but by doing this you also need to chance line because
+it&rsquo;s no more a specific point but the axis origin much easier right?</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
     createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
 }
@@ -245,12 +263,17 @@ when calling branch, 100 is the value of len</p>
     line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
 }
 </code></pre></div>
-<p>Note:
-remenber that axis is inverted so len must be negative thats why its -len</p>
+<p>Note: remember that axis is inverted so <code>len</code> must be negative thats why its <code>-len</code></p>
 
 <h2 id="development">Development</h2>
 
-<p>trunk is fixed and strong to grow big so lets do it, lets draw branches to the tree but going straight ahead its not very treatable, lets go sideways then seems good to do so you need to change the angle you will draw onto, rotate is the way to go but just for testing measures lets only go to the right now that rotate is used there only one thing left before draw the branch what is ? correct moving the axis origin to the trunk&rsquo;s top by using translate again, now all conditions are met let&rsquo;s draw branches</p>
+<p>Trunk is fixed and strong to grow big so lets do it, lets draw branches to the
+tree but going straight ahead its not very treatable, lets go sideways then
+seems good to do so you need to change the angle you will draw onto, rotate is
+the way to go but just for testing measures lets only go to the right now that
+rotate is used there only one thing left before draw the branch what is ?
+Correct moving the axis origin to the trunk&rsquo;s top by using translate again, now
+all conditions are met let&rsquo;s draw branches.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
     createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
 }
@@ -271,7 +294,11 @@ remenber that axis is inverted so len must be negative thats why its -len</p>
 </code></pre></div>
 <p><img src="branch.png" alt="" /></p>
 
-<p>your tree now has a new branch, yeah but if you really wanna make a real tree branch as you go up on it will grow smaller so how do you make it possible? simple see how you did line again well that basically doing branch function so instead of doing line just call branch with a smaller value or by other means multiply the initially given number by another smaller than 1 let use 0.7 here</p>
+<p>Your tree now has a new branch, yeah but if you really wanna make a real tree
+branch as you go up on it will grow smaller so how do you make it possible?
+Simple see how you did line again well that basically doing branch function so
+instead of doing line just call branch with a smaller value or by other means
+multiply the initially given number by another smaller than 1 let use 0.7 here</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
     createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
 }
@@ -294,7 +321,12 @@ remenber that axis is inverted so len must be negative thats why its -len</p>
 
 <p><img src="crash.png" alt="" /></p>
 
-<p>well its no surprise there&rsquo;s no limitation/condition to make it stop when it created an infinite loop and eventually went boom,so lets make a stop point so eventually it stops and don&rsquo;t explodes anymore, in order for it to happen use if parentheses and inside the condition you want for branch to stop here lets use len &gt; 4 implement the if condition before with branch inside and it will stop when len is minus or equal to 4 in this case, so lets try it</p>
+<p>Well, its no surprise there&rsquo;s no limitation/condition to make it stop when it
+created an infinite loop and eventually went boom,so lets make a stop point so
+eventually it stops and don&rsquo;t explodes anymore, in order for it to happen use
+if parentheses and inside the condition you want for branch to stop here lets
+use <code>len &gt; 4</code> implement the if condition before with branch inside and it will
+stop when <code>len</code> is minus or equal to 4 in this case, so lets try it.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
     createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
 }
@@ -323,13 +355,13 @@ remenber that axis is inverted so len must be negative thats why its -len</p>
 
 <span style="color:#a2f;font-weight:bold">function</span> setup() {
     createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
-	  angleMode(DEGREES);
-	  slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
+    angleMode(DEGREES);
+    slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
 }
 
 <span style="color:#a2f;font-weight:bold">function</span> draw() {
     background(<span style="color:#666">220</span>);
-	angle <span style="color:#666">=</span> slider.value();
+    angle <span style="color:#666">=</span> slider.value();
     stroke(<span style="color:#666">255</span>);
     translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
     branch(<span style="color:#666">100</span>);
@@ -339,22 +371,25 @@ remenber that axis is inverted so len must be negative thats why its -len</p>
     line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
     translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
     rotate(angle);
-	<span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
+    <span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
       branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>);
 }
-	
-}
 </code></pre></div>
-<p>in case you are wondering &ldquo;, angle = slider.value();&rdquo; is simply saying the slider created is applied to the angle range also let is used to define the variable name instead of creating a function easier and most important less work</p>
+<p>In case you are wondering <code>angle = slider.value();</code> is simply saying the
+slider created is applied to the angle range also let is used to define the
+variable name instead of creating a function easier and most important less
+work.</p>
 
-<p>rightside is now done so to do left side is simply rotating to the opposite side by doing -angle and calling branch again everything on the if condition made before</p>
+<p>Rightsize is now done so to do left side is simply rotating to the opposite
+side by doing -angle and calling branch again everything on the if condition
+made before.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">let</span> angle;
 <span style="color:#a2f;font-weight:bold">let</span> slider;
 
 <span style="color:#a2f;font-weight:bold">function</span> setup() {
     createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
-	  angleMode(DEGREES);
-	  slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
+    angleMode(DEGREES);
+    slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
 }
 
 <span style="color:#a2f;font-weight:bold">function</span> draw() {
@@ -391,13 +426,13 @@ remenber that axis is inverted so len must be negative thats why its -len</p>
 
 <span style="color:#a2f;font-weight:bold">function</span> setup() {
     createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
-	  angleMode(DEGREES);
-	  slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
+    angleMode(DEGREES);
+    slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
 }
 
 <span style="color:#a2f;font-weight:bold">function</span> draw() {
     background(<span style="color:#666">220</span>);
-	angle <span style="color:#666">=</span> slider.value();
+    angle <span style="color:#666">=</span> slider.value();
     stroke(<span style="color:#666">255</span>);
     translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
     branch(<span style="color:#666">100</span>);
@@ -406,23 +441,25 @@ remenber that axis is inverted so len must be negative thats why its -len</p>
 <span style="color:#a2f;font-weight:bold">function</span> branch(len) {
     line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
     translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
-	<span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
-    push();
-      rotate(angle);
-      branch(len<span style="color:#666">*</span><span style="color:#666">0.7</span>);
-    pop();
-    push();
-      rotate(<span style="color:#666">-</span>angle);
-      branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>
-    pop();
-
-}
-	
+    <span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
+        push();
+          rotate(angle);
+          branch(len<span style="color:#666">*</span><span style="color:#666">0.7</span>);
+        pop();
+        push();
+          rotate(<span style="color:#666">-</span>angle);
+          branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>
+        pop();
+    }
 }
 </code></pre></div>
 <p><img src="finalTree.png" alt="" /></p>
 
-<p>your hard work paid off the tree is finally done this is a basic one now that you have this basic knowledge how to make a fractal tree try to improve it making a Christmas tree or give your imagination/creativity wings and fly create your own and unique tree now that you are up to the challenge go and fly</p>
+<p>Your hard work paid off the tree is finally done this is a basic one now that
+you have this basic knowledge how to make a fractal tree try to improve it
+making a Christmas tree or give your imagination/creativity wings and fly
+create your own and unique tree now that you are up to the challenge go and
+fly.</p>
 
 </div>
 

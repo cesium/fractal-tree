@@ -6,11 +6,14 @@ weight: -270
 
 ## Introduction
 
-This project has the goal of making a factual tree. From the get-go lets explain what a fractal, well a fractal is an infinite repetition of a certain pattern in this particular case our pattern is the "Y" this may not seem clear now but it will soon don't worry. Now that you know what a fractal is a fractal tree is simply a fractal that makes a tree as its final form. Okay after this basic explanation lets get it started!
+This project has the goal of making a fractal tree. From the get-go lets
+explain what a fractal, well a fractal is an infinite repetition of a certain
+pattern in this particular case our pattern is the "Y" this may not seem clear
+now but it will soon don't worry. Now that you know what a fractal is a fractal
+tree is simply a fractal that makes a tree as its final form. Okay after this
+basic explanation lets get it started!
 
 ![](finalTree.png)
-
-
 
 at the end of this tutorial, you will obtain the power to make one of these incredible don't you think?
 
@@ -19,14 +22,14 @@ at the end of this tutorial, you will obtain the power to make one of these incr
 #### Web Browser
 
 The method used to access the internet some examples of web browsers:
-  
+
 * Google Chrome
-* Mozila FireFox
+* MozillaFfirefox
 * Microsoft Edge
 * Safari
 * Opera
 
-And so many others but these are more common
+And so many others.
 
 #### Text Editor / Web Editor
 
@@ -37,7 +40,7 @@ So as a writer needs his pen and paper, so you need yours, in your case its an e
 * [Atom](https://atom.io/)
 * [Notepad++](https://notepad-plus-plus.org/download/)
 
-And a milion of others have fun searching for them...
+And a million of others have fun searching for them...
 
 ### Basics
 
@@ -95,7 +98,10 @@ The background is now Black yeah
 
 #### Line
 
-With your "base" set now lets learn how to draw in this case lines,so what do need to draw a line ? exactly two points, so give the function two points (height,weight) and let "line" do its job (unite those points) see as easy as it can be.
+With your "base" set now lets learn how to draw in this case lines,so what do
+need to draw a line ? Exactly two points, so give the function two points
+(height,weight) and let "line" do its job (unite those points) see as easy as
+it can be.
 
 Note:
 have into account that you need to give one point then another so have into consideration you only have two coordinates you work with so line can only have four arguments (numbers) and three commas
@@ -143,7 +149,7 @@ function rotation() {
 
 the axis is rotated now 45 degrees
 
-After this brief knowladge lets finally start coding!
+After this brief knowledge lets finally start coding!
 
 ## Start
 
@@ -185,11 +191,17 @@ function branch() {
 ```
 don't give too much importance to stroke is simply the color desired for the line in this case white
 
-if everything is done correctly it should look like this 
+If everything is done correctly it should look like this:
 
 ![](trunk.png)
 
-the trunk is now established next step is to draw branches to do so using a variable is optimal, since lots of branches will be needed and to make the tree do it recursively is the way to go so how do you do it? first and foremost to define a variable you do it inside the parentheses of the function you want that variable to be into in this case its branch, let's name it len since it will define the length of branches lets try then to write the same code but now with the variable len
+The trunk is now established next step is to draw branches to do so using a
+variable is optimal, since lots of branches will be needed and to make the tree
+do it recursively is the way to go so how do you do it? First and foremost to
+define a variable you do it inside the parentheses of the function you want
+that variable to be into in this case its branch, let's name it `len` since it
+will define the length of branches lets try then to write the same code but now
+with the variable `len`.
 
 ```javascript
 
@@ -209,10 +221,14 @@ function branch(len) {
 
 ```
 
-Note:
-when calling branch, 100 is the value of len
-
-using variables is now on skill list but drawing lines from a specific point in this case from (200, 400) to (200, 300) its a pain since the goal is to draw a tree recursively so a simple way to do it is simply starting to draw from the axis origin and then define a pattern so what should you use to do so ? the answer here is translated defining axis origin the middle bottom then starting to make the tree grow from there but by doing this you also need to chance line because it's no more a specific point but the axis origin much easier right?
+Note: when calling branch, 100 is the value of `len` using variables is now on
+skill list but drawing lines from a specific point in this case from (200, 400)
+to (200, 300) its a pain since the goal is to draw a tree recursively so a
+simple way to do it is simply starting to draw from the axis origin and then
+define a pattern so what should you use to do so ? The answer here is
+translated defining axis origin the middle bottom then starting to make the
+tree grow from there but by doing this you also need to chance line because
+it's no more a specific point but the axis origin much easier right?
 
 ```javascript
 
@@ -233,12 +249,17 @@ function branch(len) {
 
 ```
 
-Note:
-remenber that axis is inverted so len must be negative thats why its -len
+Note: remember that axis is inverted so `len` must be negative thats why its `-len`
 
 ## Development
 
-trunk is fixed and strong to grow big so lets do it, lets draw branches to the tree but going straight ahead its not very treatable, lets go sideways then seems good to do so you need to change the angle you will draw onto, rotate is the way to go but just for testing measures lets only go to the right now that rotate is used there only one thing left before draw the branch what is ? correct moving the axis origin to the trunk's top by using translate again, now all conditions are met let's draw branches
+Trunk is fixed and strong to grow big so lets do it, lets draw branches to the
+tree but going straight ahead its not very treatable, lets go sideways then
+seems good to do so you need to change the angle you will draw onto, rotate is
+the way to go but just for testing measures lets only go to the right now that
+rotate is used there only one thing left before draw the branch what is ?
+Correct moving the axis origin to the trunk's top by using translate again, now
+all conditions are met let's draw branches.
 
 ```javascript
 
@@ -264,7 +285,11 @@ function branch(len) {
 
 ![](branch.png)
 
-your tree now has a new branch, yeah but if you really wanna make a real tree branch as you go up on it will grow smaller so how do you make it possible? simple see how you did line again well that basically doing branch function so instead of doing line just call branch with a smaller value or by other means multiply the initially given number by another smaller than 1 let use 0.7 here
+Your tree now has a new branch, yeah but if you really wanna make a real tree
+branch as you go up on it will grow smaller so how do you make it possible?
+Simple see how you did line again well that basically doing branch function so
+instead of doing line just call branch with a smaller value or by other means
+multiply the initially given number by another smaller than 1 let use 0.7 here
 
 ```javascript
 
@@ -291,7 +316,12 @@ surprise it exploded or by other means this happened
 
 ![](crash.png)
 
-well its no surprise there's no limitation/condition to make it stop when it created an infinite loop and eventually went boom,so lets make a stop point so eventually it stops and don't explodes anymore, in order for it to happen use if parentheses and inside the condition you want for branch to stop here lets use len > 4 implement the if condition before with branch inside and it will stop when len is minus or equal to 4 in this case, so lets try it
+Well, its no surprise there's no limitation/condition to make it stop when it
+created an infinite loop and eventually went boom,so lets make a stop point so
+eventually it stops and don't explodes anymore, in order for it to happen use
+if parentheses and inside the condition you want for branch to stop here lets
+use `len > 4` implement the if condition before with branch inside and it will
+stop when `len` is minus or equal to 4 in this case, so lets try it.
 
 ```javascript
 
@@ -321,19 +351,18 @@ function branch(len) {
 See it didn't go boom anymore but if you want to adjust the angle without changing it every single time,first lets make the angle a variable so its easier to adjust for so making a slider is the way to go, how do you make a slider you ask use createSlider after in parentheses obviously (take into account that createslider needs four arguments), firstly in the first two arguments you put the slider range here it will be from 0 to 180 (from this point onwards lets stop using radiants and start to use degrees, for it use angleMode(DEGREES), it sets the angle to degrees, if you have difficulties doing so click [here](https://en.wikipedia.org/wiki/Radian)), then on the third argument put the starting point here is 45 and finally how much you want to move by changing the slider 1 seems okay here, so lets implement this to the code
 
 ```javascript
-
 let angle;
 let slider;
 
 function setup() {
     createCanvas(400, 400);
-	  angleMode(DEGREES);
-	  slider = createSlider(0, 180, 45, 1);
+    angleMode(DEGREES);
+    slider = createSlider(0, 180, 45, 1);
 }
 
 function draw() {
     background(220);
-	angle = slider.value();
+    angle = slider.value();
     stroke(255);
     translate(200, 400);
     branch(100);
@@ -343,17 +372,19 @@ function branch(len) {
     line(0, 0, 0, -len);
     translate(0, -len);
     rotate(angle);
-	if (len > 4) {
+    if (len > 4) {
       branch(len * 0.7);
 }
-	
-}
-
 ```
 
-in case you are wondering ", angle = slider.value();" is simply saying the slider created is applied to the angle range also let is used to define the variable name instead of creating a function easier and most important less work
+In case you are wondering `angle = slider.value();` is simply saying the
+slider created is applied to the angle range also let is used to define the
+variable name instead of creating a function easier and most important less
+work.
 
-rightside is now done so to do left side is simply rotating to the opposite side by doing -angle and calling branch again everything on the if condition made before
+Rightsize is now done so to do left side is simply rotating to the opposite
+side by doing -angle and calling branch again everything on the if condition
+made before.
 
 ```javascript
 
@@ -362,8 +393,8 @@ let slider;
 
 function setup() {
     createCanvas(400, 400);
-	  angleMode(DEGREES);
-	  slider = createSlider(0, 180, 45, 1);
+    angleMode(DEGREES);
+    slider = createSlider(0, 180, 45, 1);
 }
 
 function draw() {
@@ -404,13 +435,13 @@ let slider;
 
 function setup() {
     createCanvas(400, 400);
-	  angleMode(DEGREES);
-	  slider = createSlider(0, 180, 45, 1);
+    angleMode(DEGREES);
+    slider = createSlider(0, 180, 45, 1);
 }
 
 function draw() {
     background(220);
-	angle = slider.value();
+    angle = slider.value();
     stroke(255);
     translate(200, 400);
     branch(100);
@@ -419,22 +450,24 @@ function draw() {
 function branch(len) {
     line(0, 0, 0, -len);
     translate(0, -len);
-	if (len > 4) {
-    push();
-      rotate(angle);
-      branch(len*0.7);
-    pop();
-    push();
-      rotate(-angle);
-      branch(len * 0.7
-    pop();
-
-}
-	
+    if (len > 4) {
+        push();
+          rotate(angle);
+          branch(len*0.7);
+        pop();
+        push();
+          rotate(-angle);
+          branch(len * 0.7
+        pop();
+    }
 }
 
 ```
 
 ![](finalTree.png)
 
-your hard work paid off the tree is finally done this is a basic one now that you have this basic knowledge how to make a fractal tree try to improve it making a Christmas tree or give your imagination/creativity wings and fly create your own and unique tree now that you are up to the challenge go and fly
+Your hard work paid off the tree is finally done this is a basic one now that
+you have this basic knowledge how to make a fractal tree try to improve it
+making a Christmas tree or give your imagination/creativity wings and fly
+create your own and unique tree now that you are up to the challenge go and
+fly.
