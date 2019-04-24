@@ -93,7 +93,8 @@ In this example the canvas has a 200x200 dimension.
 
 Since a blank canvas is boring and programming is not, you need to give it a
 little bit of life. To do so, you use a background that allows editing your
-canvas color from 0 to 256, 0 being black and 256 white, respectively.
+canvas color from 0 to 256, 0 being black and 256 white, respectively. Read
+more [here](https://p5js.org/reference/#/p5/background).
 
 Example:
 
@@ -494,3 +495,6 @@ making a Christmas tree or give your imagination/creativity wings and fly!
 Create your own and unique tree, now that you are up to the challenge go and
 fly.
 
+## Bibliography
+
+* [p5.js Documentation](https://p5js.org/reference/#/p5/background)
