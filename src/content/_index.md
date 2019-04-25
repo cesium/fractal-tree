@@ -272,7 +272,7 @@ rotate is used there's only one thing left before drawing the branch. What is it
 Correctly moving the axis origin to the trunk's top by using translate again. 
 Now that all conditions are reunited let's draw branches.
 
-```javascript
+```js
 function setup() {
     createCanvas(400, 400);
 }

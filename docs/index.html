@@ -27,8 +27,8 @@
   <link rel='canonical' href='https://cesium.github.io/fractal-tree/'>
 
   
-<link rel='stylesheet' href='assets/paper.min.css'>
-<link rel='stylesheet' href='assets/demo.css'>
+<link rel='stylesheet' href='https://cesium.github.io/fractal-tree/assets/paper.min.css'>
+<link rel='stylesheet' href='https://cesium.github.io/fractal-tree/assets/demo.css'>
 </head>
 
 
@@ -36,7 +36,7 @@
 
 <body>
   <div id='top' class='row site'>
-    <div class='sm-12 md-8 col'>
+    <div class='sm-12 md-12 col'>
         <div class='paper'>
           <div class='demo-title'>
             <div class='row flex-center'>
@@ -48,10 +48,9 @@
 
             <div class="row flex-center child-borders">
   <a class='paper-btn margin current' href='/fractal-tree/'>Fractal Tree</a>
-  <a class='paper-btn margin' href='/fractal-tree/docs/'>Documentation</a>
   <a class='paper-btn margin' href='/fractal-tree/about/'>About Us</a>
   
-  <a href="https://github.com/rhyneav/papercss" target="_blank" class="paper-btn margin">Github</a>
+  <a href="https://github.com/cesium/fractal-tree" target="_blank" class="paper-btn margin">Github</a>
 </div>
 
           </div>
@@ -120,7 +119,7 @@ amazing, the knowledge will be given for free.</p>
 
 <p><strong>Note:</strong> To define/use functions you need to call them. That&rsquo;s pretty simple,
 here is a small example.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> whatever() {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> whatever() {
 
 }
 </code></pre></div>
@@ -141,8 +140,8 @@ Well that&rsquo;s a challenge for you to overcome, so take it into account when 
 your tree.</p>
 
 <p>Example:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> canvas() {
-    createCanvas(<span style="color:#666">200</span>,<span style="color:#666">200</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> canvas() {
+    createCanvas(200,200);
 }
 </code></pre></div>
 <p>In this example the canvas has a 200x200 dimension.</p>
@@ -154,8 +153,8 @@ little bit of life. To do so, you use a background that allows editing your
 canvas color from 0 to 256, 0 being black and 256 white, respectively.</p>
 
 <p>Example:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> color() {
-    background(<span style="color:#666">0</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> color() {
+    background(0);
 }
 </code></pre></div>
 <p>The background is now Black.</p>
@@ -171,8 +170,8 @@ job, unite those points. See? As easy as it can be.</p>
 take into consideration you only have two coordinates.</p>
 
 <p>Example:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> draw() {
-    line(<span style="color:#666">0</span>,<span style="color:#666">0</span>,<span style="color:#666">10</span>,<span style="color:#666">10</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> draw() {
+    line(0,0,10,10);
 }
 </code></pre></div>
 <p>Here, the first point is (0,0), the second one is (10,10) and line unifies
@@ -186,8 +185,8 @@ the point? - you may ask yourself. Later on, while creating your tree, you will
 understand, so take this into account, it will help you a lot.</p>
 
 <p>Example:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> translation() {
-    translate(<span style="color:#666">10</span>,<span style="color:#666">10</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> translation() {
+    translate(10,10);
 }
 </code></pre></div>
 <p>Origin of the axis is now at (10,10).</p>
@@ -199,7 +198,7 @@ Rotate allows you to rotate the axis, the rotation made is based on the angle
 passed as a parameter.</p>
 
 <p>Example:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> rotation() {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> rotation() {
     rotate(PI<span style="">/4);</span>
 }
 </code></pre></div>
@@ -212,12 +211,12 @@ passed as a parameter.</p>
 <p>Since the starting line must be somewhere this time is with <code>createCanvas</code> and
 background (explained before) thats given out before you even think about
 it.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
-    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
+    createCanvas(400, 400);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> draw() {
-    background(<span style="color:#666">220</span>);
+<span style="color:#00f">function</span> draw() {
+    background(220);
 }
 </code></pre></div>
 <p>The &ldquo;Base&rdquo; is now ready for improvement. The first step to build the tree is to
@@ -226,18 +225,18 @@ do it? Since canvas size is a 400x400 let&rsquo;s do it in the bottom middle of 
 that is 200x200 with length 100 and to make it simpler to understand let&rsquo;s
 make another function with it and call it to branch. It will be useful later, so
 just do it now.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
-    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
+    createCanvas(400, 400);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> draw() {
-    background(<span style="color:#666">220</span>);
-    stroke(<span style="color:#666">255</span>);
+<span style="color:#00f">function</span> draw() {
+    background(220);
+    stroke(255);
     branch();
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> branch() {
-    line(<span style="color:#666">200</span>, <span style="color:#666">400</span>, <span style="color:#666">200</span>, <span style="color:#666">300</span>);
+<span style="color:#00f">function</span> branch() {
+    line(200, 400, 200, 300);
 }
 </code></pre></div>
 <p>Don&rsquo;t give too much importance to stroke, as it is simply the color desired for the
@@ -254,18 +253,18 @@ define a variable you do it inside the parentheses of the function you want
 that variable to be inside of. In this case, its branch. Let&rsquo;s name it <code>len</code> since it
 will define the length of branches. Lets try then to write the same code but now
 with the variable <code>len</code>.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
-    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
+    createCanvas(400, 400);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> draw() {
-    background(<span style="color:#666">220</span>);
-    stroke(<span style="color:#666">255</span>);
-    branch(<span style="color:#666">100</span>);
+<span style="color:#00f">function</span> draw() {
+    background(220);
+    stroke(255);
+    branch(100);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
-    line(<span style="color:#666">200</span>, <span style="color:#666">400</span>, <span style="color:#666">200</span>, <span style="color:#666">400</span> <span style="color:#666">-</span> len);
+<span style="color:#00f">function</span> branch(len) {
+    line(200, 400, 200, 400 - len);
 }
 </code></pre></div>
 <p>Note: when calling branch, 100 is the value of <code>len</code>. Using variables is now on
@@ -276,19 +275,19 @@ define a pattern. So, what should you use to do so ? The answer here is
 translated defining axis origin the middle bottom then starting to make the
 tree grow from there. But by doing this you also need to chance line, because
 it&rsquo;s not a specific point anymore. But the axis origin is much easier, right?</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
-    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
+    createCanvas(400, 400);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> draw() {
-    background(<span style="color:#666">220</span>);
-    stroke(<span style="color:#666">255</span>);
-    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
-    branch(<span style="color:#666">100</span>);
+<span style="color:#00f">function</span> draw() {
+    background(220);
+    stroke(255);
+    translate(200, 400);
+    branch(100);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
-    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+<span style="color:#00f">function</span> branch(len) {
+    line(0, 0, 0, -len);
 }
 </code></pre></div>
 <p><strong>Note:</strong> remember that the axis is inverted so <code>len</code> must be negative thats why
@@ -303,22 +302,22 @@ the way to go but just for testing measures lets only go to the right. Now that
 rotate is used there&rsquo;s only one thing left before drawing the branch. What is it?
 Correctly moving the axis origin to the trunk&rsquo;s top by using translate again.
 Now that all conditions are reunited let&rsquo;s draw branches.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
-    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> setup() {
+    createCanvas(400, 400);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> draw() {
-    background(<span style="color:#666">220</span>);
-    stroke(<span style="color:#666">255</span>);
-    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
-    branch(<span style="color:#666">100</span>);
+<span style="color:#00f">function</span> draw() {
+    background(220);
+    stroke(255);
+    translate(200, 400);
+    branch(100);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
-    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
-    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+<span style="color:#00f">function</span> branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
     rotate(PI<span style="">/4);</span>
-    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+    line(0, 0, 0, -len);
 }
 </code></pre></div>
 <p><img src="branch.png" alt="" /></p>
@@ -328,22 +327,22 @@ branch as you go up, it will grow smaller so how do you make it possible?
 Simple! See how you did line again. Well, that&rsquo;s basically doing branch function, so
 instead of doing line, just call branch with a smaller value or by other means
 multiply the initially given number by another smaller than 1. Let&rsquo;s use 0.7 here.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
-    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
+    createCanvas(400, 400);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> draw() {
-    background(<span style="color:#666">220</span>);
-    stroke(<span style="color:#666">255</span>);
-    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
-    branch(<span style="color:#666">100</span>);
+<span style="color:#00f">function</span> draw() {
+    background(220);
+    stroke(255);
+    translate(200, 400);
+    branch(100);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
-    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
-    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+<span style="color:#00f">function</span> branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
     rotate(PI<span style="">/4);</span>
-    branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>);
+    branch(len * 0.7);
 }
 </code></pre></div>
 <p>The code above generated the following:</p>
@@ -356,23 +355,23 @@ it stops and doesn&rsquo;t explode anymore. In order for it to happen use
 if parentheses and inside, the condition you want for branch to stop. Here lets
 use <code>len &gt; 4</code>. Implement the if condition before, with the branch inside and it will
 stop when <code>len</code> is lesser than, or equals 4 in this case, so lets try it.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">function</span> setup() {
-    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
+    createCanvas(400, 400);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> draw() {
-    background(<span style="color:#666">220</span>);
-    stroke(<span style="color:#666">255</span>);
-    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
-    branch(<span style="color:#666">100</span>);
+<span style="color:#00f">function</span> draw() {
+    background(220);
+    stroke(255);
+    translate(200, 400);
+    branch(100);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
-    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
-    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+<span style="color:#00f">function</span> branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
     rotate(PI<span style="">/4);</span>
-    <span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
-        branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>)
+    <span style="color:#00f">if</span> (len &gt; 4) {
+        branch(len * 0.7)
     }
 }
 </code></pre></div>
@@ -390,29 +389,29 @@ doing so click <a href="https://en.wikipedia.org/wiki/Radian" target="_blank">he
 argument put the starting point. Here it&rsquo;s 45, and finally how much you want to
 move by changing the slider. 1 seems okay here, so lets implement this to the
 code.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">let</span> angle;
-<span style="color:#a2f;font-weight:bold">let</span> slider;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">let</span> angle;
+<span style="color:#00f">let</span> slider;
 
-<span style="color:#a2f;font-weight:bold">function</span> setup() {
-    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+<span style="color:#00f">function</span> setup() {
+    createCanvas(400, 400);
     angleMode(DEGREES);
-    slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
+    slider = createSlider(0, 180, 45, 1);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> draw() {
-    background(<span style="color:#666">220</span>);
-    angle <span style="color:#666">=</span> slider.value();
-    stroke(<span style="color:#666">255</span>);
-    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
-    branch(<span style="color:#666">100</span>);
+<span style="color:#00f">function</span> draw() {
+    background(220);
+    angle = slider.value();
+    stroke(255);
+    translate(200, 400);
+    branch(100);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
-    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
-    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+<span style="color:#00f">function</span> branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
     rotate(angle);
-    <span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
-      branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>);
+    <span style="color:#00f">if</span> (len &gt; 4) {
+      branch(len * 0.7);
 }
 </code></pre></div>
 <p>In case you are wondering <code>angle = slider.value();</code> is simply saying the
@@ -423,32 +422,32 @@ work.</p>
 <p>Rightsize is now done so to do the left side you simply rotate to the opposite
 side by doing -angle and calling branch again everything on the if condition
 made before.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">let</span> angle;
-<span style="color:#a2f;font-weight:bold">let</span> slider;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">let</span> angle;
+<span style="color:#00f">let</span> slider;
 
-<span style="color:#a2f;font-weight:bold">function</span> setup() {
-    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+<span style="color:#00f">function</span> setup() {
+    createCanvas(400, 400);
     angleMode(DEGREES);
-    slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
+    slider = createSlider(0, 180, 45, 1);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> draw() {
-    background(<span style="color:#666">220</span>);
-    angle <span style="color:#666">=</span> slider.value();
-    stroke(<span style="color:#666">255</span>);
-    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
-    branch(<span style="color:#666">100</span>);
+<span style="color:#00f">function</span> draw() {
+    background(220);
+    angle = slider.value();
+    stroke(255);
+    translate(200, 400);
+    branch(100);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
-    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
-    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
+<span style="color:#00f">function</span> branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
 
-    <span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
+    <span style="color:#00f">if</span> (len &gt; 4) {
       rotate(angle);
-      branch(len<span style="color:#666">*</span><span style="color:#666">0.7</span>);
-      rotate(<span style="color:#666">-</span>angle);
-      branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>
+      branch(len*0.7);
+      rotate(-angle);
+      branch(len * 0.7
     }
 }
 </code></pre></div>
@@ -468,34 +467,34 @@ when the if condition makes you stop you pop, it means you go back to the state
 saved in push. Up to this point you have only done the right side of the tree
 now for the left side just push and pop again but this time to the negative
 angle and magic will happen.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">let</span> angle;
-<span style="color:#a2f;font-weight:bold">let</span> slider;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">let</span> angle;
+<span style="color:#00f">let</span> slider;
 
-<span style="color:#a2f;font-weight:bold">function</span> setup() {
-    createCanvas(<span style="color:#666">400</span>, <span style="color:#666">400</span>);
+<span style="color:#00f">function</span> setup() {
+    createCanvas(400, 400);
     angleMode(DEGREES);
-    slider <span style="color:#666">=</span> createSlider(<span style="color:#666">0</span>, <span style="color:#666">180</span>, <span style="color:#666">45</span>, <span style="color:#666">1</span>);
+    slider = createSlider(0, 180, 45, 1);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> draw() {
-    background(<span style="color:#666">220</span>);
-    angle <span style="color:#666">=</span> slider.value();
-    stroke(<span style="color:#666">255</span>);
-    translate(<span style="color:#666">200</span>, <span style="color:#666">400</span>);
-    branch(<span style="color:#666">100</span>);
+<span style="color:#00f">function</span> draw() {
+    background(220);
+    angle = slider.value();
+    stroke(255);
+    translate(200, 400);
+    branch(100);
 }
 
-<span style="color:#a2f;font-weight:bold">function</span> branch(len) {
-    line(<span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#666">-</span>len);
-    translate(<span style="color:#666">0</span>, <span style="color:#666">-</span>len);
-    <span style="color:#a2f;font-weight:bold">if</span> (len <span style="color:#666">&gt;</span> <span style="color:#666">4</span>) {
+<span style="color:#00f">function</span> branch(len) {
+    line(0, 0, 0, -len);
+    translate(0, -len);
+    <span style="color:#00f">if</span> (len &gt; 4) {
         push();
           rotate(angle);
-          branch(len<span style="color:#666">*</span><span style="color:#666">0.7</span>);
+          branch(len*0.7);
         pop();
         push();
-          rotate(<span style="color:#666">-</span>angle);
-          branch(len <span style="color:#666">*</span> <span style="color:#666">0.7</span>
+          rotate(-angle);
+          branch(len * 0.7
         pop();
     }
 }
@@ -512,140 +511,8 @@ fly.</p>
 
         </div>
     </div>
-    <div class='sm-12 md-4 col sidebar'>
     
-    <div class='paper'>
-      <h3 class='sidebar-title' style='text-align:center'>
-        <a href='/docs'>Documentation</a>
-      </h3>
-      <div class='row'>
-        
-        <div class='collapsible full-width'>
-          <input id='collapsible-components' type='radio' name='collapsible'>
-          <label for="collapsible-components">Components</label>
-          <div class="collapsible-body">
-            <ul>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/alerts/'>Alerts</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/articles/'>Articles</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/badges/'>Badges</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/buttons/'>Buttons</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/cards/'>Cards</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/collapsible/'>Collapsibles</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/forms/'>Forms</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/modals/'>Modals</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/navbar/'>Navbar</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/popovers/'>Popovers</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/progress/'>Progress</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/tabs/'>Tabs</a>
-              </li>
-            
-            </ul>
-          </div>
-        </div>
-        
-        <div class='collapsible full-width'>
-          <input id='collapsible-content' type='radio' name='collapsible'>
-          <label for="collapsible-content">Content</label>
-          <div class="collapsible-body">
-            <ul>
-            
-              <li>
-                <a href='/fractal-tree/docs/content/code/'>Code</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/content/images/'>Images</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/content/lists/'>Lists</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/content/tables/'>Tables</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/content/typography/'>Typography</a>
-              </li>
-            
-            </ul>
-          </div>
-        </div>
-        
-        <div class='collapsible full-width'>
-          <input id='collapsible-layout' type='radio' name='collapsible'>
-          <label for="collapsible-layout">Layout</label>
-          <div class="collapsible-body">
-            <ul>
-            
-              <li>
-                <a href='/fractal-tree/docs/layout/flexbox/'>Flexbox</a>
-              </li>
-            
-            </ul>
-          </div>
-        </div>
-        
-        <div class='collapsible full-width'>
-          <input id='collapsible-utilities' type='radio' name='collapsible'>
-          <label for="collapsible-utilities">Utilities</label>
-          <div class="collapsible-body">
-            <ul>
-            
-              <li>
-                <a href='/fractal-tree/docs/utilities/borders/'>Borders &amp; Shadows</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/utilities/colors/'>Colors</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/utilities/spacing/'>Spacing</a>
-              </li>
-            
-            </ul>
-          </div>
-        </div>
-        
-      </div>
-    </div>
+<div class='sm-12 md-12 col'>
     
     <div class='paper'>
       <div class="row flex-center">
