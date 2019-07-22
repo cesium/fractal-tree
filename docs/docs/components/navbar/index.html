@@ -27,8 +27,8 @@
   <link rel='canonical' href='https://cesium.github.io/fractal-tree/docs/components/navbar/'>
 
   
-<link rel='stylesheet' href='assets/paper.min.css'>
-<link rel='stylesheet' href='assets/demo.css'>
+<link rel='stylesheet' href='https://cesium.github.io/fractal-tree/assets/paper.min.css'>
+<link rel='stylesheet' href='https://cesium.github.io/fractal-tree/assets/demo.css'>
 </head>
 
 
@@ -36,7 +36,7 @@
 
 <body>
   <div id='top' class='row site'>
-    <div class='sm-12 md-8 col'>
+    <div class='sm-12 md-12 col'>
         <div class='paper'>
           <div class='demo-title'>
             <div class='row flex-center'>
@@ -48,10 +48,9 @@
 
             <div class="row flex-center child-borders">
   <a class='paper-btn margin' href='/fractal-tree/'>Fractal Tree</a>
-  <a class='paper-btn margin' href='/fractal-tree/docs/'>Documentation</a>
   <a class='paper-btn margin' href='/fractal-tree/about/'>About Us</a>
   
-  <a href="https://github.com/rhyneav/papercss" target="_blank" class="paper-btn margin">Github</a>
+  <a href="https://github.com/cesium/fractal-tree" target="_blank" class="paper-btn margin">Github</a>
 </div>
 
           </div>
@@ -113,28 +112,28 @@
 <h4 id="code">Code:</h4>
 
 <p>Add <code>.fixed</code> to <code>&lt;nav&gt;</code> to fix the nav to the top to have it scroll the whole page. It&rsquo;s also mobile responsive and will show a hamburger menu on small screens. No JavaScript required!</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">nav</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;border fixed split-nav&#34;</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;nav-brand&#34;</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">h3</span>&gt;&lt;<span style="color:#008000;font-weight:bold">a</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;#&#34;</span>&gt;Get PaperCSS&lt;/<span style="color:#008000;font-weight:bold">a</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">h3</span>&gt;
-  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;collapsible&#34;</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">input</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;collapsible1&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;checkbox&#34;</span> <span style="color:#b44">name</span><span style="color:#666">=</span><span style="color:#b44">&#34;collapsible1&#34;</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">button</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">label</span> <span style="color:#b44">for</span><span style="color:#666">=</span><span style="color:#b44">&#34;collapsible1&#34;</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar1&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar2&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar3&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-      &lt;/<span style="color:#008000;font-weight:bold">label</span>&gt;
-    &lt;/<span style="color:#008000;font-weight:bold">button</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;collapsible-body&#34;</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">ul</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;inline&#34;</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;&lt;<span style="color:#008000;font-weight:bold">a</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;#&#34;</span>&gt;Documentation&lt;/<span style="color:#008000;font-weight:bold">a</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;&lt;<span style="color:#008000;font-weight:bold">a</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;#&#34;</span>&gt;About&lt;/<span style="color:#008000;font-weight:bold">a</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;&lt;<span style="color:#008000;font-weight:bold">a</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;#&#34;</span>&gt;Github&lt;/<span style="color:#008000;font-weight:bold">a</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
-      &lt;/<span style="color:#008000;font-weight:bold">ul</span>&gt;
-    &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#008000;font-weight:bold">nav</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;nav class=<span style="color:#a31515">&#34;border fixed split-nav&#34;</span>&gt;
+  &lt;div class=<span style="color:#a31515">&#34;nav-brand&#34;</span>&gt;
+    &lt;h3&gt;&lt;a href=<span style="color:#a31515">&#34;#&#34;</span>&gt;Get PaperCSS&lt;/a&gt;&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=<span style="color:#a31515">&#34;collapsible&#34;</span>&gt;
+    &lt;input id=<span style="color:#a31515">&#34;collapsible1&#34;</span> type=<span style="color:#a31515">&#34;checkbox&#34;</span> name=<span style="color:#a31515">&#34;collapsible1&#34;</span>&gt;
+    &lt;button&gt;
+    &lt;label for=<span style="color:#a31515">&#34;collapsible1&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;bar1&#34;</span>&gt;&lt;/div&gt;
+        &lt;div class=<span style="color:#a31515">&#34;bar2&#34;</span>&gt;&lt;/div&gt;
+        &lt;div class=<span style="color:#a31515">&#34;bar3&#34;</span>&gt;&lt;/div&gt;
+      &lt;/label&gt;
+    &lt;/button&gt;
+    &lt;div class=<span style="color:#a31515">&#34;collapsible-body&#34;</span>&gt;
+      &lt;ul class=<span style="color:#a31515">&#34;inline&#34;</span>&gt;
+        &lt;li&gt;&lt;a href=<span style="color:#a31515">&#34;#&#34;</span>&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=<span style="color:#a31515">&#34;#&#34;</span>&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=<span style="color:#a31515">&#34;#&#34;</span>&gt;Github&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div>
 <h3 id="not-split-navbar">Not Split Navbar</h3>
 
 <nav class="border">
@@ -161,166 +160,34 @@
 </nav>
 
 <h4 id="code-1">Code:</h4>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">nav</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;border fixed&#34;</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;nav-brand&#34;</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">h4</span>&gt;&lt;<span style="color:#008000;font-weight:bold">a</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;#&#34;</span>&gt;Get PaperCSS&lt;/<span style="color:#008000;font-weight:bold">a</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">h4</span>&gt;
-  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;collapsible&#34;</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">input</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;collapsible2&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;checkbox&#34;</span> <span style="color:#b44">name</span><span style="color:#666">=</span><span style="color:#b44">&#34;collapsible2&#34;</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">button</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">label</span> <span style="color:#b44">for</span><span style="color:#666">=</span><span style="color:#b44">&#34;collapsible2&#34;</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar1&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar2&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;bar3&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-      &lt;/<span style="color:#008000;font-weight:bold">label</span>&gt;
-    &lt;/<span style="color:#008000;font-weight:bold">button</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;collapsible-body&#34;</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">ul</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;inline&#34;</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;&lt;<span style="color:#008000;font-weight:bold">a</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;#&#34;</span>&gt;Documentation&lt;/<span style="color:#008000;font-weight:bold">a</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;&lt;<span style="color:#008000;font-weight:bold">a</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;#&#34;</span>&gt;About&lt;/<span style="color:#008000;font-weight:bold">a</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
-        &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;&lt;<span style="color:#008000;font-weight:bold">a</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;#&#34;</span>&gt;Github&lt;/<span style="color:#008000;font-weight:bold">a</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
-      &lt;/<span style="color:#008000;font-weight:bold">ul</span>&gt;
-    &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-  &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#008000;font-weight:bold">nav</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;nav class=<span style="color:#a31515">&#34;border fixed&#34;</span>&gt;
+  &lt;div class=<span style="color:#a31515">&#34;nav-brand&#34;</span>&gt;
+    &lt;h4&gt;&lt;a href=<span style="color:#a31515">&#34;#&#34;</span>&gt;Get PaperCSS&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=<span style="color:#a31515">&#34;collapsible&#34;</span>&gt;
+    &lt;input id=<span style="color:#a31515">&#34;collapsible2&#34;</span> type=<span style="color:#a31515">&#34;checkbox&#34;</span> name=<span style="color:#a31515">&#34;collapsible2&#34;</span>&gt;
+    &lt;button&gt;
+      &lt;label for=<span style="color:#a31515">&#34;collapsible2&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;bar1&#34;</span>&gt;&lt;/div&gt;
+        &lt;div class=<span style="color:#a31515">&#34;bar2&#34;</span>&gt;&lt;/div&gt;
+        &lt;div class=<span style="color:#a31515">&#34;bar3&#34;</span>&gt;&lt;/div&gt;
+      &lt;/label&gt;
+    &lt;/button&gt;
+    &lt;div class=<span style="color:#a31515">&#34;collapsible-body&#34;</span>&gt;
+      &lt;ul class=<span style="color:#a31515">&#34;inline&#34;</span>&gt;
+        &lt;li&gt;&lt;a href=<span style="color:#a31515">&#34;#&#34;</span>&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=<span style="color:#a31515">&#34;#&#34;</span>&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=<span style="color:#a31515">&#34;#&#34;</span>&gt;Github&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div>
 </div>
 
         </div>
     </div>
-    <div class='sm-12 md-4 col sidebar'>
     
-    <div class='paper'>
-      <h3 class='sidebar-title' style='text-align:center'>
-        <a href='/docs'>Documentation</a>
-      </h3>
-      <div class='row'>
-        
-        <div class='collapsible full-width'>
-          <input id='collapsible-components' type='radio' name='collapsible'>
-          <label for="collapsible-components">Components</label>
-          <div class="collapsible-body">
-            <ul>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/alerts/'>Alerts</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/articles/'>Articles</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/badges/'>Badges</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/buttons/'>Buttons</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/cards/'>Cards</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/collapsible/'>Collapsibles</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/forms/'>Forms</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/modals/'>Modals</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/navbar/'>Navbar</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/popovers/'>Popovers</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/progress/'>Progress</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/components/tabs/'>Tabs</a>
-              </li>
-            
-            </ul>
-          </div>
-        </div>
-        
-        <div class='collapsible full-width'>
-          <input id='collapsible-content' type='radio' name='collapsible'>
-          <label for="collapsible-content">Content</label>
-          <div class="collapsible-body">
-            <ul>
-            
-              <li>
-                <a href='/fractal-tree/docs/content/code/'>Code</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/content/images/'>Images</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/content/lists/'>Lists</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/content/tables/'>Tables</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/content/typography/'>Typography</a>
-              </li>
-            
-            </ul>
-          </div>
-        </div>
-        
-        <div class='collapsible full-width'>
-          <input id='collapsible-layout' type='radio' name='collapsible'>
-          <label for="collapsible-layout">Layout</label>
-          <div class="collapsible-body">
-            <ul>
-            
-              <li>
-                <a href='/fractal-tree/docs/layout/flexbox/'>Flexbox</a>
-              </li>
-            
-            </ul>
-          </div>
-        </div>
-        
-        <div class='collapsible full-width'>
-          <input id='collapsible-utilities' type='radio' name='collapsible'>
-          <label for="collapsible-utilities">Utilities</label>
-          <div class="collapsible-body">
-            <ul>
-            
-              <li>
-                <a href='/fractal-tree/docs/utilities/borders/'>Borders &amp; Shadows</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/utilities/colors/'>Colors</a>
-              </li>
-            
-              <li>
-                <a href='/fractal-tree/docs/utilities/spacing/'>Spacing</a>
-              </li>
-            
-            </ul>
-          </div>
-        </div>
-        
-      </div>
-    </div>
+<div class='sm-12 md-12 col'>
     
     <div class='paper'>
       <div class="row flex-center">

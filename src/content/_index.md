@@ -9,9 +9,12 @@ weight: -270
 The purpose of this project is to build a fractal tree. From the get-go lets
 explain what is a fractal. Well, a fractal is the infinite repetition of a
 certain pattern, in this particular case our pattern is the "Y" symbol. This
-concept may not seem clear now but it will be soon but if you have trouble with fractals you can find more about it [`here`](https://mathigon.org/world/Fractals) before starting this tutorial.
+concept may not seem clear now but it will be soon but if you have trouble with
+fractals you can find more about it [`here`](https://mathigon.org/world/Fractals)
+before starting this tutorial.
 
-Now that you know what a fractal is, a fractal tree is simply a fractal that builds a tree as it is being created. Okay, after this basic explanation lets get it started!
+Now that you know what a fractal is, a fractal tree is simply a fractal that builds
+a tree as it is being created. Okay, after this basic explanation lets get it started!
 
 ![](finalTree.png)
 
@@ -68,12 +71,14 @@ Obviously, this function does nothing because it's empty.
 
 Just like painting you need some sort of place to be your canvas. Like the name
 suggests, let's create one. So, what do you do to use this function? Basically,
-call `createCanvas` with the desired parameters. First you need to pass the height,followed by the width in order to obtain your canvas. So let's create 
-some art! Yeah, programming is art. More info about `createCanvas` [`here`](https://p5js.org/reference/#/p5/createCanvas).   
+call `createCanvas` with the desired parameters. First you need to pass the height,
+followed by the width in order to obtain your canvas. So let's create some art! 
+Yeah, programming is art. More info [`here`](https://p5js.org/reference/#/p5/createCanvas).   
 
 **Note:** Fun fact about the canvas you have just created: It's height grows to
 the right, like it usually does, but its width doesn't grow upwards, like you
 are used to. It grows to the opposite side(downwards). Why does it happen?
+
 Well that's a challenge for you to overcome, so take it into account when doing
 your tree.
 
@@ -109,7 +114,8 @@ The background is now Black.
 With your "base" now set, lets learn how to draw. In this case we will be
 drawing lines, so what do you need to draw a line? Simple answer: exactly two
 points. So give the function two points (height, width) and let `line` do its
-job, unite those points. See? As easy as it can be. Futher `line` knowledge [`here`](https://p5js.org/reference/#/p5/line)
+job, unite those points. See? As easy as it can be. Futher `line` knowledge 
+[`here`](https://p5js.org/reference/#/p5/line)
 
 **Note:** Take into account that you need to give one point and then another so
 take into consideration you only have two coordinates.
@@ -129,7 +135,8 @@ Here, the first point is (0,0), the second one is (10,10) and `line` joins them.
 Did you ever wan to change the origin of the axis from the good old (0,0) to
 whatever origin you wish? Well, `translate` make your dreams come true. What's
 the point? - you may ask yourself. Later on, while creating your tree, you will
-understand, so take this into account, it will help you a lot. For more `translate` comprehension go [`here`](https://p5js.org/reference/#/p5/translate)
+understand, so take this into account, it will help you a lot. For more `translate` 
+comprehension go [`here`](https://p5js.org/reference/#/p5/translate)
 
 Example:
 
@@ -145,7 +152,7 @@ Origin of the axis is now at (10,10).
 
 Almost done with the Basics and to end it, nothing better than `rotate`.
 `rotate` allows you to rotate the axis, the rotation made is based on the angle
-passed as a parameter. Some more `rotate` info right [`here`](https://p5js.org/reference/#/p5/rotate)
+passed as a parameter. Some more `rotate` info right [`here`](https://p5js.org/reference/#/p5/rotate).
 
 Example:
 
@@ -162,8 +169,7 @@ You are now ready to start coding!
 ## Start
 
 Since the starting line must be somewhere this time is with `createCanvas` and
-`background` (explained before) thats given out before you even think about
-it.
+`background` (explained before) thats given out before you even think about it.
 
 ```javascript
 function setup() {
@@ -197,7 +203,6 @@ function draw() {
 function branch() {
     line(200, 400, 200, 300);
 }
-
 ```
 
 Don't give too much importance to stroke, as it is simply the color desired for the
@@ -270,7 +275,7 @@ the way to go but just for testing measures lets only go to the right. Now that
 Correctly moving the axis origin to the trunk's top by using `translate` again. 
 Now that all conditions are reunited let's draw branches.
 
-```javascript
+```js
 function setup() {
     createCanvas(400, 400);
 }
@@ -294,8 +299,10 @@ function branch(len) {
 
 Your tree now has a new branch. But if you really wanna make a real tree
 branch as you go up, it will grow smaller so how do you make it possible?
-Simple! See how you did `line` again. Well, that's basically doing branch function,so instead of doing `line`, just call branch with a smaller value or by other means
-multiply the initially given number by another smaller than 1. Let's use 0.7 here.
+Simple! See how you did `line` again. Well, that's basically doing branch 
+function,so instead of doing `line`, just call branch with a smaller value
+or by other means multiply the initially given number by another smaller 
+than 1. Let's use 0.7 here.
 
 ```javascript
 function setup() {
@@ -397,7 +404,9 @@ slider created is applied to the angle range. Also let is used to define the
 variable name instead of creating a function. Easier and most important less
 work.
 
-Rightsize is now done so to do the left side you simply use `rotate` to the opposite side by doing -angle and calling branch again everything on the if condition made before.
+Rightsize is now done so to do the left side you simply use `rotate` to the 
+opposite side by doing -angle and calling branch again everything on the if 
+condition made before.
 
 ```javascript
 let angle;
