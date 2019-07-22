@@ -9,10 +9,12 @@ weight: -270
 The purpose of this project is to build a fractal tree. From the get-go lets
 explain what is a fractal. Well, a fractal is the infinite repetition of a
 certain pattern, in this particular case our pattern is the "Y" symbol. This
-concept may not seem clear now but it will be soon, so don't worry. Now that
-you know what a fractal is, a fractal tree is simply a fractal that builds a
-tree as it is being created. Okay, after this basic explanation lets get it
-started!
+concept may not seem clear now but it will be soon but if you have trouble with
+fractals you can find more about it [`here`](https://mathigon.org/world/Fractals)
+before starting this tutorial.
+
+Now that you know what a fractal is, a fractal tree is simply a fractal that builds
+a tree as it is being created. Okay, after this basic explanation lets get it started!
 
 ![](finalTree.png)
 
@@ -25,11 +27,11 @@ incredible, don't you think?
 
 Software that lets you access the internet, some examples of web browsers are:
 
-* Google Chrome
-* Mozilla Firefox
-* Microsoft Edge
-* Safari
-* Opera
+* [`Google Chrome`](https://www.google.com/chrome/)
+* [`Mozilla Firefox`](https://www.mozilla.org/pt-PT/firefox/)
+* [`Microsoft Edge`](https://www.microsoft.com/pt-pt/windows/microsoft-edge)
+* [`Safari`](https://support.apple.com/downloads/safari-for-windows)
+* [`Opera`](https://www.opera.com/pt-br)
 
 And so many others, but these are more common.
 
@@ -42,10 +44,10 @@ sometimes (most of them) rage but, mainly, where you succeed. Even though it's
 hard to hustle, never give up and keep on trying! In the long run, it will be worth
 it. Some examples of text editors are the following:
 
-* [Sublime Text 3](https://www.sublimetext.com/3)
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Atom](https://atom.io/)
-* [Notepad++](https://notepad-plus-plus.org/download/)
+* [`Sublime Text 3`](https://www.sublimetext.com/3)
+* [`Visual Studio Code`](https://code.visualstudio.com/)
+* [`Atom`](https://atom.io/)
+* [`Notepad++`](https://notepad-plus-plus.org/download/)
 
 And there are a million others, have fun searching them...
 
@@ -68,14 +70,15 @@ Obviously, this function does nothing because it's empty.
 #### CreateCanvas
 
 Just like painting you need some sort of place to be your canvas. Like the name
-suggests, lets create one. So, what do you do to use this function? Basically,
-call `createCanvas` with the desired parameters. First you need to pass the
-height, followed by the width, and finally, you have your canvas. So let us
-create some art! Yeah, programming is art.
+suggests, let's create one. So, what do you do to use this function? Basically,
+call `createCanvas` with the desired parameters. First you need to pass the height,
+followed by the width in order to obtain your canvas. So let's create some art! 
+Yeah, programming is art. More info [`here`](https://p5js.org/reference/#/p5/createCanvas).   
 
 **Note:** Fun fact about the canvas you have just created: It's height grows to
 the right, like it usually does, but its width doesn't grow upwards, like you
-are used to. It grows to the opposite side or downwards. Why does it happen?
+are used to. It grows to the opposite side(downwards). Why does it happen?
+
 Well that's a challenge for you to overcome, so take it into account when doing
 your tree.
 
@@ -93,7 +96,8 @@ In this example the canvas has a 200x200 dimension.
 
 Since a blank canvas is boring and programming is not, you need to give it a
 little bit of life. To do so, you use a background that allows editing your
-canvas color from 0 to 256, 0 being black and 256 white, respectively.
+canvas color from 0 to 255, 0 being black and 256 white, respectively. Read
+more [`here`](https://p5js.org/reference/#/p5/background).
 
 Example:
 
@@ -109,8 +113,9 @@ The background is now Black.
 
 With your "base" now set, lets learn how to draw. In this case we will be
 drawing lines, so what do you need to draw a line? Simple answer: exactly two
-points. So give the function two points (height, width) and let "line" do its
-job, unite those points. See? As easy as it can be.
+points. So give the function two points (height, width) and let `line` do its
+job, unite those points. See? As easy as it can be. Futher `line` knowledge 
+[`here`](https://p5js.org/reference/#/p5/line)
 
 **Note:** Take into account that you need to give one point and then another so
 take into consideration you only have two coordinates.
@@ -123,15 +128,15 @@ function draw() {
 }
 ```
 
-Here, the first point is (0,0), the second one is (10,10) and line unifies
-both.
+Here, the first point is (0,0), the second one is (10,10) and `line` joins them.
 
 #### Translate
 
 Did you ever wan to change the origin of the axis from the good old (0,0) to
 whatever origin you wish? Well, `translate` make your dreams come true. What's
 the point? - you may ask yourself. Later on, while creating your tree, you will
-understand, so take this into account, it will help you a lot.
+understand, so take this into account, it will help you a lot. For more `translate` 
+comprehension go [`here`](https://p5js.org/reference/#/p5/translate)
 
 Example:
 
@@ -145,9 +150,9 @@ Origin of the axis is now at (10,10).
 
 #### Rotate
 
-Almost done with the Basics and to end it, nothing better than rotate.
-Rotate allows you to rotate the axis, the rotation made is based on the angle
-passed as a parameter.
+Almost done with the Basics and to end it, nothing better than `rotate`.
+`rotate` allows you to rotate the axis, the rotation made is based on the angle
+passed as a parameter. Some more `rotate` info right [`here`](https://p5js.org/reference/#/p5/rotate).
 
 Example:
 
@@ -164,8 +169,7 @@ You are now ready to start coding!
 ## Start
 
 Since the starting line must be somewhere this time is with `createCanvas` and
-background (explained before) thats given out before you even think about
-it.
+`background` (explained before) thats given out before you even think about it.
 
 ```javascript
 function setup() {
@@ -178,7 +182,7 @@ function draw() {
 ```
 
 The "Base" is now ready for improvement. The first step to build the tree is to 
-draw its trunk. Well, to do it, lets use line but where should you
+draw its trunk. Well, to do it, lets use `line` but where should you
 do it? Since canvas size is a 400x400 let's do it in the bottom middle of canvas
 that is 200x200 with length 100 and to make it simpler to understand let's
 make another function with it and call it to branch. It will be useful later, so
@@ -199,7 +203,6 @@ function draw() {
 function branch() {
     line(200, 400, 200, 300);
 }
-
 ```
 
 Don't give too much importance to stroke, as it is simply the color desired for the
@@ -233,13 +236,13 @@ function branch(len) {
 }
 ```
 
-Note: when calling branch, 100 is the value of `len`. Using variables is now on
+**Note:** when calling branch, 100 is the value of `len`. Using variables is now on
 skill list but drawing lines from a specific point in this case from (200, 400)
 to (200, 300) its a pain since the goal is to draw a tree recursively so a
 simple way to do it is simply starting to draw from the axis origin and then
 define a pattern. So, what should you use to do so ? The answer here is
 translated defining axis origin the middle bottom then starting to make the
-tree grow from there. But by doing this you also need to chance line, because
+tree grow from there. But by doing this you also need to change `line`, because
 it's not a specific point anymore. But the axis origin is much easier, right?
 
 ```javascript
@@ -268,8 +271,8 @@ Trunk is fixed and strong to grow big so lets do it, lets draw branches on the
 tree. Going straight ahead is not very treatable, so lets go sideways. Then, if 
 it seems good to do so, you need to change the angle you will draw onto, rotate is
 the way to go but just for testing measures lets only go to the right. Now that
-rotate is used there's only one thing left before drawing the branch. What is it?
-Correctly moving the axis origin to the trunk's top by using translate again. 
+`rotate` is used there's only one thing left before drawing the branch. What is it?
+Correctly moving the axis origin to the trunk's top by using `translate` again. 
 Now that all conditions are reunited let's draw branches.
 
 ```js
@@ -296,9 +299,10 @@ function branch(len) {
 
 Your tree now has a new branch. But if you really wanna make a real tree
 branch as you go up, it will grow smaller so how do you make it possible?
-Simple! See how you did line again. Well, that's basically doing branch function, so
-instead of doing line, just call branch with a smaller value or by other means
-multiply the initially given number by another smaller than 1. Let's use 0.7 here.
+Simple! See how you did `line` again. Well, that's basically doing branch 
+function,so instead of doing `line`, just call branch with a smaller value
+or by other means multiply the initially given number by another smaller 
+than 1. Let's use 0.7 here.
 
 ```javascript
 function setup() {
@@ -400,9 +404,9 @@ slider created is applied to the angle range. Also let is used to define the
 variable name instead of creating a function. Easier and most important less
 work.
 
-Rightsize is now done so to do the left side you simply rotate to the opposite
-side by doing -angle and calling branch again everything on the if condition
-made before.
+Rightsize is now done so to do the left side you simply use `rotate` to the 
+opposite side by doing -angle and calling branch again everything on the if 
+condition made before.
 
 ```javascript
 let angle;
@@ -494,3 +498,7 @@ making a Christmas tree or give your imagination/creativity wings and fly!
 Create your own and unique tree, now that you are up to the challenge go and
 fly.
 
+## Bibliography
+
+* [p5.js Documentation](https://p5js.org/reference/#/p5/background)
+* [Learn javascript](https://javascript.info/) 
