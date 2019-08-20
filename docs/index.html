@@ -65,18 +65,22 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>The purpose of this project is to build a fractal tree. From the get-go lets
-explain what is a fractal. Well, a fractal is the infinite repetition of a
-certain pattern, in this particular case our pattern is the &ldquo;Y&rdquo; symbol. This
-concept may not seem clear now but it will be soon, so don&rsquo;t worry. Now that
-you know what a fractal is, a fractal tree is simply a fractal that builds a
-tree as it is being created. Okay, after this basic explanation lets get it
-started!</p>
+<p>
+  The purpose of this project is to build a fractal tree. From the get-go let&rsquo;s
+  explain what a fractal is. To begin with, a fractal is the infinite repetition of a
+  certain pattern - in this particular case our pattern is the &ldquo;Y&rdquo; symbol. This
+  concept may not seem clear for now but don&rsquo;t worry - it will be soon! Now that
+  you know what a fractal is, a fractal tree is simply a fractal that builds a
+  tree as it is being created. Okay, after this basic explanation let&rsquo;s get it
+  started!
+</p>
 
 <p><img src="finalTree.png" alt="" /></p>
 
-<p>At the end of this tutorial you will obtain the power to make one of these,
-incredible, don&rsquo;t you think?</p>
+<p>
+  At the end of this tutorial you will obtain the power to make one of these.
+  Incredible, don&rsquo;t you agree?
+</p>
 
 <h3 id="setup">Setup</h3>
 
@@ -85,23 +89,26 @@ incredible, don&rsquo;t you think?</p>
 <p>Software that lets you access the internet, some examples of web browsers are:</p>
 
 <ul>
-<li>Google Chrome</li>
-<li>Mozilla Firefox</li>
-<li>Microsoft Edge</li>
-<li>Safari</li>
-<li>Opera</li>
+  <li><a href="https://www.google.com/intl/en_uk/chrome/">Google Chrome</a></li>
+  <li><a href="https://www.mozilla.org/en-GB/firefox/new/">Mozilla Firefox</a></li>
+  <li><a href="https://www.microsoft.com/en-gb/windows/microsoft-edge">Microsoft Edge</a></li>
+  <li><a href="https://support.apple.com/downloads/safari">Safari</a></li>
+  <li><a href="https://www.opera.com/download">Opera</a></li>
 </ul>
 
-<p>And so many others, but these are more common.</p>
+<p>Many others exist, but these are the most user-friendly and most commonly used.</p>
 
 <h4 id="text-editor-web-editor">Text Editor / Web Editor</h4>
 
-<p>So, as a writer needs his pen and paper, you need your own tools, in your case,
-you need an editor. What is an editor? - you may ask. Well, it&rsquo;s the place where
-the magic happens, where you write your code, where you fail, where you
-sometimes (most of them) rage but, mainly, where you succeed. Even though it&rsquo;s
-hard to hustle, never give up and keep on trying! In the long run, it will be worth
-it. Some examples of text editors are the following:</p>
+<p>
+  So, as a writer needs their pen and paper, you will need your own tools, or, in this case,
+  you need an IDE, or, to put it simple, a text editor.
+  &ldquo;And what is a text editor?&rdquo; - you may ask. Well, it&rsquo;s the place where
+  the magic happens, where you will write your code, where you will fail, where you will
+  sometimes (most of them) rage but, mainly, where you will succeed. Even though it&rsquo;s
+  hard to hustle, never give up and keep on trying! In the long run, it will be worth
+  it. Some examples of text editors are the following:
+</p>
 
 <ul>
 <li><a href="https://www.sublimetext.com/3" target="_blank">Sublime Text 3</a></li>
@@ -110,15 +117,19 @@ it. Some examples of text editors are the following:</p>
 <li><a href="https://notepad-plus-plus.org/download/" target="_blank">Notepad++</a></li>
 </ul>
 
-<p>And there are a million others, have fun searching them&hellip;</p>
+<p>And there are a million others around the internet - make sure you use your favorite&excl;</p>
 
 <h3 id="basics">Basics</h3>
 
-<p>For this project, you will need some acquired knowledge. Since this tutorial is
-amazing, the knowledge will be given for free.</p>
+<p>
+  For this project, you will need some acquired knowledge. Since this tutorial is
+  amazing, the knowledge will be given for free. That&rsquo;s right, fully free.
+</p>
 
-<p><strong>Note:</strong> To define/use functions you need to call them. That&rsquo;s pretty simple,
-here is a small example.</p>
+<p>
+  <strong>Note:</strong> To define/use functions you need to call them. That&rsquo;s pretty simple,
+  here is a small example.
+</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> whatever() {
 
 }
@@ -127,17 +138,21 @@ here is a small example.</p>
 
 <h4 id="createcanvas">CreateCanvas</h4>
 
-<p>Just like painting you need some sort of place to be your canvas. Like the name
-suggests, lets create one. So, what do you do to use this function? Basically,
-call <code>createCanvas</code> with the desired parameters. First you need to pass the
-height, followed by the width, and finally, you have your canvas. So let us
-create some art! Yeah, programming is art.</p>
+<p>
+  Just like in painting, you&rsquo;ll need some sort of place to be your canvas. As the name
+  suggests, let&rsquo;s create one. So, what should you do to make use of this function? Basically,
+  call <code>createCanvas</code> with the desired parameters. First you&rsquo;ll need to pass the
+  height, followed by the width, and finally, you have your fully functional canvas. So let us
+  create some art! And yeah, programming is art.
+</p>
 
-<p><strong>Note:</strong> Fun fact about the canvas you have just created: It&rsquo;s height grows to
-the right, like it usually does, but its width doesn&rsquo;t grow upwards, like you
-are used to. It grows to the opposite side or downwards. Why does it happen?
-Well that&rsquo;s a challenge for you to overcome, so take it into account when doing
-your tree.</p>
+<p>
+  <strong>Fun fact</strong> about the canvas you have just created: its height grows to
+  the right, like it usually does, but its width doesn&rsquo;t grow upwards, like you
+  are used to. It grows to the opposite side, or downwards. Why does it happen?
+  Well that&rsquo;s a challenge for you to overcome, so take it into account when creating
+  your tree.
+</p>
 
 <p>Example:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> canvas() {
@@ -148,9 +163,11 @@ your tree.</p>
 
 <h4 id="background">Background</h4>
 
-<p>Since a blank canvas is boring and programming is not, you need to give it a
-little bit of life. To do so, you use a background that allows editing your
-canvas color from 0 to 256, 0 being black and 256 white, respectively.</p>
+<p>
+  Since a blank canvas is boring and programming is not, you need to give it a 
+  little bit of life. To do so, you use a background that allows you to edit your
+  canvas color within a range of 0 to 256 - 0 being black and 256 being white, respectively.
+</p>
 
 <p>Example:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> color() {
@@ -161,28 +178,37 @@ canvas color from 0 to 256, 0 being black and 256 white, respectively.</p>
 
 <h4 id="line">Line</h4>
 
-<p>With your &ldquo;base&rdquo; now set, lets learn how to draw. In this case we will be
-drawing lines, so what do you need to draw a line? Simple answer: exactly two
-points. So give the function two points (height, width) and let &ldquo;line&rdquo; do its
-job, unite those points. See? As easy as it can be.</p>
+<p>
+  With your &ldquo;base&rdquo; now set, let&rsquo;s learn how to draw. In this case we will be
+  drawing lines - and what do you need to draw a line? Simple answer: exactly two
+  points, no more, no less. So give the function two points (height, width) and let the &ldquo;line&rdquo; do its
+  job by connecting those points. See? As easy as it can be.
+</p>
 
-<p><strong>Note:</strong> Take into account that you need to give one point and then another so
-take into consideration you only have two coordinates.</p>
+<p>
+  <strong>Note:</strong> Take into account that you need to give one point and then another so
+  make sure that you only have two coordinates.
+</p>
 
 <p>Example:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> draw() {
     line(0,0,10,10);
 }
 </code></pre></div>
-<p>Here, the first point is (0,0), the second one is (10,10) and line unifies
-both.</p>
+
+<p>
+  Here, the first point is (0,0), the second one is (10,10) and line connects
+  both.
+</p>
 
 <h4 id="translate">Translate</h4>
 
-<p>Did you ever wan to change the origin of the axis from the good old (0,0) to
-whatever origin you wish? Well, <code>translate</code> make your dreams come true. What&rsquo;s
-the point? - you may ask yourself. Later on, while creating your tree, you will
-understand, so take this into account, it will help you a lot.</p>
+<p>
+  Did you ever wish to change the origin of the axis from the typical (0,0) to
+  whichever origin you saw fit? Well, the function <code>translate</code> is here to make your dreams come true.
+  &ldquo;And what&rsquo;s the point of it?&rdquo; - you may ask yourself. Later on, while creating your tree,
+  you will understand, so for now just know that it will help you a lot.
+</p>
 
 <p>Example:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> translation() {
@@ -193,9 +219,11 @@ understand, so take this into account, it will help you a lot.</p>
 
 <h4 id="rotate">Rotate</h4>
 
-<p>Almost done with the Basics and to end it, nothing better than rotate.
-Rotate allows you to rotate the axis, the rotation made is based on the angle
-passed as a parameter.</p>
+<p>
+  Almost done with the basics - we're just missing the ability to rotate.
+  Rotate, as its name suggests, allows you to rotate the axis.
+  The rotation made is based on the angle passed as a parameter.
+</p>
 
 <p>Example:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> rotation() {
@@ -208,9 +236,11 @@ passed as a parameter.</p>
 
 <h2 id="start">Start</h2>
 
-<p>Since the starting line must be somewhere this time is with <code>createCanvas</code> and
-background (explained before) thats given out before you even think about
-it.</p>
+<p>
+  Since the starting line has to be somewhere, with the usage of <code>createCanvas</code> and the
+  background (explained before), we add in here a snippet of code to ease your burden of building one
+  from scratch.
+  </p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
     createCanvas(400, 400);
 }
@@ -219,12 +249,14 @@ it.</p>
     background(220);
 }
 </code></pre></div>
-<p>The &ldquo;Base&rdquo; is now ready for improvement. The first step to build the tree is to
-draw its trunk. Well, to do it, lets use line but where should you
-do it? Since canvas size is a 400x400 let&rsquo;s do it in the bottom middle of canvas
-that is 200x200 with length 100 and to make it simpler to understand let&rsquo;s
-make another function with it and call it to branch. It will be useful later, so
-just do it now.</p>
+<p>
+  The &ldquo;Base&rdquo; is now ready for improvement. The first step to build the tree is to
+  draw its trunk. To begin with, let&rsquo;s use the previous line. But&hellip; where should you
+  do it? Since the canvas size is 400x400, let&rsquo;s do it by the bottom middle part of the canvas,
+  which is 200x200 and with length 100, and to make it simpler to understand let&rsquo;s
+  create another function with it and call it to the branch. You will notice that it will be useful
+  later on, so let&rsquo;s just build it for now.
+</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
     createCanvas(400, 400);
 }
@@ -239,20 +271,24 @@ just do it now.</p>
     line(200, 400, 200, 300);
 }
 </code></pre></div>
-<p>Don&rsquo;t give too much importance to stroke, as it is simply the color desired for the
-line. In this case, white.</p>
+<p>
+  Don&rsquo;t give too much importance to stroke, as it is simply the color desired for the
+  line. In this case, white.
+</p>
 
 <p>If everything is done correctly it should look like this:</p>
 
 <p><img src="trunk.png" alt="" /></p>
 
-<p>The trunk is now established. The next step is to draw branches. To do so, using a
-variable is optimal, since lots of branches will be needed. And to make the tree
-do it recursively, is the way to go. So how do you do it? First and foremost to
-define a variable you do it inside the parentheses of the function you want
-that variable to be inside of. In this case, its branch. Let&rsquo;s name it <code>len</code> since it
-will define the length of branches. Lets try then to write the same code but now
-with the variable <code>len</code>.</p>
+<p>
+  The trunk is now built. The next step is to draw branches. To do so, using a
+  variable is optimal, since lots of branches will be needed. And to create the tree
+  just do it recursively - it is the best way to do it. And how do would you do it? First and
+  foremost, to define a variable you must do it inside the parentheses of the function you want
+  that variable to be inside of. In this case, its branch. Let&rsquo;s name it <code>len</code>,
+  since it will define the length of branches. Let&rsquo;s try then to write the same code but now
+  with the variable <code>len</code>.
+</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
     createCanvas(400, 400);
 }
@@ -267,14 +303,16 @@ with the variable <code>len</code>.</p>
     line(200, 400, 200, 400 - len);
 }
 </code></pre></div>
-<p>Note: when calling branch, 100 is the value of <code>len</code>. Using variables is now on
-skill list but drawing lines from a specific point in this case from (200, 400)
-to (200, 300) its a pain since the goal is to draw a tree recursively so a
-simple way to do it is simply starting to draw from the axis origin and then
-define a pattern. So, what should you use to do so ? The answer here is
-translated defining axis origin the middle bottom then starting to make the
-tree grow from there. But by doing this you also need to chance line, because
-it&rsquo;s not a specific point anymore. But the axis origin is much easier, right?</p>
+  
+<p>
+  <strong>Note:</strong> when calling the function branch, you'll notice that the value of <code>len</code> is 100.
+  Drawing lines from a specific point, in this case from (200, 400) to (200, 300), is an absolute pain
+  to deal with since the goal is to draw a tree recursively. A simple way to do it is simply starting to
+  draw from the axis origin and then define a pattern. So, what should you use to do so? The answer here is
+  translated defining the axis origin as the bottom middle and then making the tree grow from there. But
+  by doing this you also need to change your line, because it&rsquo;s not a specific point anymore. But
+  the axis origin is much easier, right?
+</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
     createCanvas(400, 400);
 }
@@ -290,18 +328,23 @@ it&rsquo;s not a specific point anymore. But the axis origin is much easier, rig
     line(0, 0, 0, -len);
 }
 </code></pre></div>
-<p><strong>Note:</strong> remember that the axis is inverted so <code>len</code> must be negative thats why
-its <code>-len</code>.</p>
+<p>
+  <strong>Note:</strong> remember that the axis is inverted so <code>len</code> must be negative, so that&rsquo;s why
+  it should be <code>-len</code>.
+</p>
 
 <h2 id="development">Development</h2>
 
-<p>Trunk is fixed and strong to grow big so lets do it, lets draw branches on the
-tree. Going straight ahead is not very treatable, so lets go sideways. Then, if
-it seems good to do so, you need to change the angle you will draw onto, rotate is
-the way to go but just for testing measures lets only go to the right. Now that
-rotate is used there&rsquo;s only one thing left before drawing the branch. What is it?
-Correctly moving the axis origin to the trunk&rsquo;s top by using translate again.
-Now that all conditions are reunited let&rsquo;s draw branches.</p>
+<p>
+  Trunks are known to be stable, bulky and strong, so that it grows to be a big tree. It is only by growing big
+  that its branches appear and thus compose the tree as it is. That way, let&rsquo;s then draw branches on the
+  tree. Going straight up isn&rsquo;t really recommended as branches don&rsquo;t go that way, so let&rsquo;s go sideways. Then, if
+  you feel like it, you can also change the angle you will draw into, by using the rotate tool, which is
+  the way to go. For now, and just for testing measures let&rsquo;s only go simply to the right. Now that
+  rotate is used there&rsquo;s only one thing left before drawing the branch. What is it?
+  Correctly moving the axis origin to the trunk&rsquo;s top by using translate again.
+  Now that all conditions are met let&rsquo;s draw some hecking branches.
+</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> setup() {
     createCanvas(400, 400);
 }
@@ -322,11 +365,13 @@ Now that all conditions are reunited let&rsquo;s draw branches.</p>
 </code></pre></div>
 <p><img src="branch.png" alt="" /></p>
 
-<p>Your tree now has a new branch. But if you really wanna make a real tree
-branch as you go up, it will grow smaller so how do you make it possible?
-Simple! See how you did line again. Well, that&rsquo;s basically doing branch function, so
-instead of doing line, just call branch with a smaller value or by other means
-multiply the initially given number by another smaller than 1. Let&rsquo;s use 0.7 here.</p>
+<p>
+  Your tree now has a new branch. But if you really wanna make a real tree
+  branch as you go up, it will grow smaller&hellip; so how do you make it possible?
+  Simple! Just check on how you created your line, again. Well, that&rsquo;s basically doing the branch function, so
+  instead of doing a line, just call the branch function with a smaller value or, by other means,
+  multiply the initially given number by any other decimal another that is bigger than 0 and smaller than 1. Let&rsquo;s use 0.7 here.
+</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
     createCanvas(400, 400);
 }
@@ -349,12 +394,14 @@ multiply the initially given number by another smaller than 1. Let&rsquo;s use 0
 
 <p><img src="crash.png" alt="" /></p>
 
-<p>Well, its no surprise there&rsquo;s no limitation/condition to make it stop when it&rsquo;s
-created an infinite loop and eventually overflows. So lets make a stop point so
-it stops and doesn&rsquo;t explode anymore. In order for it to happen use
-if parentheses and inside, the condition you want for branch to stop. Here lets
-use <code>len &gt; 4</code>. Implement the if condition before, with the branch inside and it will
-stop when <code>len</code> is lesser than, or equals 4 in this case, so lets try it.</p>
+<p>
+  Well, it&rsquo;s no surprise there&rsquo;s no limitation or condition to make it stop when it
+  creates an infinite loop and eventually overflows. So let&rsquo;s make a stop condition so
+  it stops and doesn&rsquo;t explode anymore, making us scratch our heads. In order for it to happen use the syntax
+  <code>if()</code> and inside, the condition you want for branch to stop. Here let&rsquo;s
+  use <code>len &gt; 4</code>. Implement the if condition before, with the branch inside, and it will
+  stop when <code>len</code> is equals or is bigger than 4, in this case. Let&rsquo;s check it out!
+</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> setup() {
     createCanvas(400, 400);
 }
@@ -377,18 +424,18 @@ stop when <code>len</code> is lesser than, or equals 4 in this case, so lets try
 </code></pre></div>
 <p><img src="tail.png" alt="" /></p>
 
-<p>See, it didn&rsquo;t explode anymore! But if you want to adjust the angle without
-changing it every single time. First lets make the angle a variable so its
-easier to adjust. For so, making a slider is the way to go, how do you make a
-slider? - you ask. Use <code>createSlider</code> after in parentheses obviously (take into
-account that <code>createSlider</code> needs four arguments), in the first two
-arguments you put the slider range. Here, it will be from 0 to 180 (from this
-point onwards lets stop using radians and start using degrees. For this use
-<code>angleMode(DEGREES)</code>, which sets the angle to degrees. If you have difficulties
-doing so click <a href="https://en.wikipedia.org/wiki/Radian" target="_blank">here</a>), then on the third
-argument put the starting point. Here it&rsquo;s 45, and finally how much you want to
-move by changing the slider. 1 seems okay here, so lets implement this to the
-code.</p>
+<p>
+  See, it didn&rsquo;t explode anymore! But what if you want to adjust the angle without
+  changing it every single time? First let&rsquo;s make the angle a variable so it&rsquo;s
+  easier to adjust. To do so so, creating a slider is the way to go. And how do you make a
+  slider?. Use <code>createSlider</code> (take into account that <code>createSlider</code>
+  needs four arguments), whereas in the first two  arguments you put the slider range. Here, it
+  will be from 0 to 180 (from this point onwards let&rsquo;s stop using radians and start using
+  degrees. You should use <code>angleMode(DEGREES)</code>, which sets the angle to degrees.
+  If you have difficulties doing so click <a href="https://en.wikipedia.org/wiki/Radian" target="_blank">here</a>),
+  then on the third argument put the starting point. Here we&rsquo;ll be choosing 45, and finally how much you want to
+  move by changing the slider. 1 seems okay here, so let&rsquo;s implement this feature.
+</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">let</span> angle;
 <span style="color:#00f">let</span> slider;
 
@@ -414,14 +461,17 @@ code.</p>
       branch(len * 0.7);
 }
 </code></pre></div>
-<p>In case you are wondering <code>angle = slider.value();</code> is simply saying the
-slider created is applied to the angle range. Also let is used to define the
-variable name instead of creating a function. Easier and most important less
-work.</p>
+<p>
+  In case you are wondering about <code>angle = slider.value();</code>, it is simply saying
+  that the slider created is applied to the angle range. Also let is used to define the
+  variable name instead of creating a function. And, the best of all&hellip; less work.
+</p>
 
-<p>Rightsize is now done so to do the left side you simply rotate to the opposite
-side by doing -angle and calling branch again everything on the if condition
-made before.</p>
+<p>
+  The right side is now done so to do the left side you simply rotate to the opposite
+  side by doing -angle and calling <code>branch</code> again with everything on the if condition
+  as done before.
+</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">let</span> angle;
 <span style="color:#00f">let</span> slider;
 
@@ -457,16 +507,18 @@ made before.</p>
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>Why it seemed so right? Remember <code>translate</code> it&rsquo;s its fault. Since you
-always changed the &ldquo;starting&rdquo; point to the top of the branch it doesn&rsquo;t come
-back to make it to the left side. Instead it goes right and builds the
-pattern only there making, a funny but not intended result. To solve this
-problem is quite easy. Use push and pop, push saves the initial position that
-you were in, before applying the if condition then you do branch like usually and
-when the if condition makes you stop you pop, it means you go back to the state
-saved in push. Up to this point you have only done the right side of the tree
-now for the left side just push and pop again but this time to the negative
-angle and magic will happen.</p>
+<p>
+  Why it seemed so right? Remember the <code>translate</code> function. Since you
+  always changed the &ldquo;starting&rdquo; point to the top of the branch it doesn&rsquo;t come
+  back to interfere with the left side. Instead it goes right and builds the
+  pattern only in there, creating a funny but not intended result. It is quite easy
+  to solve tihs issue - use <code>push</code> and <code>pop</code>. <code>Push</code> saves the initial position that
+  you were in, before applying the if condition. Then you do <code>branch</code> like usually and
+  when the if condition makes you stop you <code>pop</code>, which means you go back to the state
+  saved in <code>push</code>. Up to this point you have only done the right side of the tree -
+  for the left side just <code>push</code> and <code>pop</code> again but this time to the negative
+  angle and magic will happen.
+</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">let</span> angle;
 <span style="color:#00f">let</span> slider;
 
@@ -501,11 +553,12 @@ angle and magic will happen.</p>
 </code></pre></div>
 <p><img src="finalTree.png" alt="" /></p>
 
-<p>Your hard work paid off! The tree is finally done. This is a basic one, but now that
-you have this basic knowledge how to make a fractal tree try to improve it
-making a Christmas tree or give your imagination/creativity wings and fly!
-Create your own and unique tree, now that you are up to the challenge go and
-fly.</p>
+<p>
+  Your hard work paid off! The tree is finally done. This is a basic one, but now that
+  you have this basic knowledge on how to create a fractal tree, try to improve it by
+  making a Christmas tree&hellip; or give your imagination/creativity wings and fly!
+  Create your own and unique tree, and let us know how it went!
+</p>
 
 </div>
 
