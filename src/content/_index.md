@@ -468,7 +468,7 @@ Why did it work so well? Remember the `translate` function. Since you
 always changed the "starting" point to the top of the branch it doesn't come
 back to interfere with the left side. Instead it goes right and builds the
 pattern only in there, creating a funny but not intended result. It is quite
-easy to solve tihs issue - use `push` and `pop`. `Push` saves the initial
+easy to solve this issue - use `push` and `pop`. `Push` saves the initial
 position that you were in, before applying the if condition. Then you do branch
 like usually and when the if condition makes you stop you `pop`, which means
 you go back to the state saved in `push`. Up to this point you have only done
