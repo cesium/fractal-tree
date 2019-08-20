@@ -14,7 +14,7 @@ fractals you can find more about it [`here`](https://mathigon.org/world/Fractals
 before starting this tutorial.
 
 Now that you know what a fractal is, a fractal tree is simply a fractal that builds a
-tree as it is being created. Okay, after this basic explanation let&rsquo;s get it
+tree as it is being created. Okay, after this basic explanation let's get it
 started!
 
 
@@ -301,7 +301,7 @@ function branch(len) {
 ![](branch.png)
 
 Your tree now has a new branch. But if you really wanna make a real tree
-branch as you go up, it will grow smaller&hellip; so how do you make it possible?
+branch as you go up, it will grow smaller... so how do you make it possible?
 Simple! Just check on how you created your `line`, again. Well, that's basically doing the branch function, so
 instead of doing a `line`, just call the branch function with a smaller value or, by other means,
 multiply the initially given number by any other decimal another that is bigger than 0 and smaller than 1. Let's use 0.7 here.
@@ -401,7 +401,7 @@ function branch(len) {
 
 In case you are wondering about `angle = slider.value();`, it is simply saying
 that the slider created is applied to the angle range. Also let is used to define the
-variable name instead of creating a function. And, the best of all&hellip; less work.
+variable name instead of creating a function. And, the best of all... less work.
 
 The right side is now done so to do the left side you simply `rotate` to the opposite
 side by doing -angle and calling branch again with everything on the if condition
