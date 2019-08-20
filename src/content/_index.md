@@ -122,7 +122,7 @@ With your "base" now set, let's learn how to draw. In this case we will be
 drawing lines - and what do you need to draw a line? Simple answer: exactly two
 points, no more, no less. So give the function two points (height, width) and
 let the `line` do its job by connecting those points. See? As easy as it can be.
-See more [`here`](https://p5js.org/reference/#/p5/line)
+See more [`here`](https://p5js.org/reference/#/p5/line).
 
 **Note:** Take into account that you need to give one point and then another so
 make sure that you only have two coordinates.
@@ -141,10 +141,10 @@ Here, the first point is (0,0), the second one is (10,10) and `line` joins them.
 
 Did you ever wish to change the origin of the axis from the typical (0,0) to
 whichever origin you saw fit? Well, the function `translate` is
-here to make your dreams come true. "And what's the point of it?"
-- you may ask yourself. Later on, while creating your tree, you
-will understand, so for now just know that it will help you a lot. For more
-`translate` comprehension go [`here`](https://p5js.org/reference/#/p5/translate)
+here to make your dreams come true. "And what's the point of it?" - you may
+ask yourself. Later on, while creating your tree, you will understand, so
+for now just know that it will help you a lot. For more `translate`
+comprehension go [`here`](https://p5js.org/reference/#/p5/translate).
 
 Example:
 
