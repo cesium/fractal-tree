@@ -424,7 +424,7 @@ define thevariable name instead of creating a function. And, the best of
 all... less work.
 
 The right side is now done so to do the left side you simply `rotate` to
-the oppositeside by doing -angle and calling branch again with everything
+the opposite side by doing -angle and calling branch again with everything
 on the if condition as done before.
 
 ```javascript
